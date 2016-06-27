@@ -4,9 +4,13 @@ import uiRouter from 'angular-ui-router';
 import firebase from 'firebase';
 import angularFire from 'angularfire';
 
+import portfolio from './modules/portfolio';
+
 let App = angular.module('app', [
   'ui.router',
-  'firebase'
+  'firebase',
+
+  'nms.portfolio'
 ]);
 
 function config($urlRouterProvider) {

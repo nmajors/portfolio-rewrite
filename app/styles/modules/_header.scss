@@ -1,0 +1,38 @@
+header {
+    height: 180px;
+    background-color: $darkblue;
+    color: $cream;
+    text-align: center;
+    border-bottom: 10px solid $coral;
+    @media screen and(min-width: 400px) {
+        height: 160px;
+    }
+    @media screen and(min-width: 768px) {
+        text-align: left;
+    }
+}
+.header-title {
+  margin: 0;
+  padding-top: 30px;
+  &--item {
+    font-size: 20px;
+    font-weight: 100;
+    a {
+        color: $cream;
+    }
+  }
+  &--item:first-child {
+      font-size: 30px;
+  }
+}
+.header-icons {
+  margin-top: 15px;
+  font-size: 32px;
+  &--icon {
+    display: inline-block;
+    padding-right: 15px;
+    a {
+        color: $cream;
+    }
+  }
+}
