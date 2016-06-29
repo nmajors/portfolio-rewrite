@@ -1,6 +1,8 @@
 body {
   margin: 0 auto;
-  font-family: Raleway; }
+  font-family: Raleway;
+  background-color: #FCF7E5;
+  padding-bottom: 30px; }
 
 ul {
   padding-left: 0;
@@ -9,42 +11,81 @@ ul {
 a {
   text-decoration: none; }
 
+section {
+  padding: 30px 5%;
+  background-color: #AEC3C1;
+  border-radius: 10px;
+  margin-top: 30px;
+  -webkit-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
+  -moz-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
+  box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53); }
+
 .container {
   width: 90%;
   margin: 0 auto; }
 
 .hidden-small {
   display: none; }
+  @media screen and (min-width: 768px) {
+    .hidden-small {
+      display: inherit;
+      font-size: 14px !important; } }
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1;
+  /* ie 6/7 */ }
 
 header {
-  height: 180px;
+  height: 175px;
   background-color: #145173;
   color: #FCF7E5;
   text-align: center;
   border-bottom: 10px solid #F75849; }
-  @media screen and (min-width: 400px) {
-    header {
-      height: 160px; } }
   @media screen and (min-width: 768px) {
     header {
-      text-align: left; } }
+      text-align: left;
+      height: 150px; } }
 
 .header-title {
   margin: 0;
   padding-top: 30px; }
+  @media screen and (min-width: 768px) {
+    .header-title {
+      display: inline-block; } }
   .header-title--item {
     font-size: 20px;
     font-weight: 100; }
+    @media screen and (min-width: 768px) {
+      .header-title--item {
+        font-size: 18px; } }
     .header-title--item a {
       color: #FCF7E5; }
   .header-title--item:first-child {
     font-size: 30px; }
+    @media screen and (min-width: 768px) {
+      .header-title--item:first-child {
+        font-size: 36px; } }
 
 .header-icons {
   margin-top: 15px;
   font-size: 32px; }
+  @media screen and (min-width: 768px) {
+    .header-icons {
+      float: right;
+      display: inline-block;
+      padding-top: 40px; } }
   .header-icons--icon {
     display: inline-block;
     padding-right: 15px; }
+    .header-icons--icon:last-child {
+      padding-right: 0; }
     .header-icons--icon a {
       color: #FCF7E5; }

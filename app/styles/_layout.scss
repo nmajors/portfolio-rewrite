@@ -4,4 +4,22 @@
 }
 .hidden-small{
   display: none;
+  @media screen and(min-width: 768px){
+    display: inherit;
+    font-size: 14px !important;
+  }
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1; /* ie 6/7 */
 }

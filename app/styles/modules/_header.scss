@@ -1,38 +1,55 @@
 header {
-    height: 180px;
+    height: 175px;
     background-color: $darkblue;
     color: $cream;
     text-align: center;
     border-bottom: 10px solid $coral;
-    @media screen and(min-width: 400px) {
-        height: 160px;
-    }
     @media screen and(min-width: 768px) {
         text-align: left;
+        height: 150px;
     }
 }
 .header-title {
-  margin: 0;
-  padding-top: 30px;
-  &--item {
-    font-size: 20px;
-    font-weight: 100;
-    a {
-        color: $cream;
+    margin: 0;
+    padding-top: 30px;
+    @media screen and(min-width: 768px) {
+      display: inline-block;
     }
-  }
-  &--item:first-child {
-      font-size: 30px;
-  }
+
+    &--item {
+        font-size: 20px;
+        font-weight: 100;
+        @media screen and(min-width: 768px) {
+            font-size: 18px;
+        }
+        a {
+            color: $cream;
+        }
+    }
+    &--item:first-child {
+        font-size: 30px;
+        @media screen and(min-width: 768px) {
+            font-size: 36px;
+        }
+    }
 }
 .header-icons {
-  margin-top: 15px;
-  font-size: 32px;
-  &--icon {
-    display: inline-block;
-    padding-right: 15px;
-    a {
-        color: $cream;
+    margin-top: 15px;
+    font-size: 32px;
+    @media screen and(min-width: 768px) {
+        float: right;
+        display: inline-block;
+        padding-top: 40px;
     }
-  }
+    &--icon {
+        display: inline-block;
+        padding-right: 15px;
+        &:last-child{
+          padding-right: 0;
+        }
+        a {
+            color: $cream;
+        }
+
+    }
 }
