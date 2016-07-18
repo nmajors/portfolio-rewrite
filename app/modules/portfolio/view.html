@@ -1,5 +1,5 @@
 <header>
-  <div class="container clearfix">
+  <div class="container">
     <ul class="header-title">
       <li class="header-title--item">Nancy Majors Smith</li>
       <li class="header-title--item">Front End Developer</li>
@@ -28,18 +28,36 @@
 
 <main>
   <div class="container">
-    <section class="intro">
-      <ul class="about">
-        <li>
-          Biologist turned software developer through the Front End Engineering program at The Iron Yard.
-        </li>
-        <li>
-          Subscriber to a clean, simple, and user friendly aesthetic.
-        </li>
-        <li>
-          Student of meteorology, astronomy, microbiology, loud music, and silly puns.
-        </li>
-      </ul>
+    <section class="intro clearfix">
+
+
+     <div class="nancyPhoto">
+       <!-- <img src="/assets/images/nancy.png" alt="Nancy Majors Smith"/> -->
+     </div>
+     <ul class="about">
+       <li class="about--item">
+         Biologist turned software developer through the Front End Engineering program at The Iron Yard.
+       </li>
+       <li class="about--item">
+         Subscriber to a clean, simple, and user friendly aesthetic.
+       </li>
+       <li class="about--item">
+         Student of meteorology, astronomy, microbiology, loud music, and silly puns.
+       </li>
+     </ul>
+     <div class="profile-buttons">
+       <a class="button-link" target="_blank" href="./assets/documents/Resume-NMS-Dev.pdf">
+         <button class="blue-button view">
+           <i class="fa fa-file-pdf-o" aria-hidden="true"></i> View Resume
+         </button>
+       </a>
+
+       <a class="button-link" target="_blank" href="https://docs.google.com/document/d/11nqcbjVimFtFIFQpy1fJUULX_7-w0TPHiRi8-hPdx1k/export?format=pdf">
+         <button class="blue-button download" id="resume-download">
+           <i class="fa fa-file-pdf-o"></i> Download Resume
+         </button>
+       </a>
+     </div>
 
     </section>
 

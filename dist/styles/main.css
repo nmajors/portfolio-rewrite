@@ -1,3 +1,50 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 body {
   margin: 0 auto;
   font-family: Raleway;
@@ -5,24 +52,36 @@ body {
   padding-bottom: 30px; }
 
 ul {
-  padding-left: 0;
-  list-style-type: none; }
+  padding-left: 0; }
 
 a {
   text-decoration: none; }
 
 section {
-  padding: 30px 5%;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  padding: 30px 7%;
   background-color: #AEC3C1;
   border-radius: 10px;
   margin-top: 30px;
+  color: #081C25;
+  line-height: 1.5;
   -webkit-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
   -moz-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
   box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53); }
+  @media screen and (min-width: 992px) {
+    section {
+      padding: 45px 7%; } }
+  @media screen and (min-width: 1500px) {
+    section {
+      padding: 45px 10%; } }
 
 .container {
   width: 90%;
   margin: 0 auto; }
+  @media screen and (min-width: 1200px) {
+    .container {
+      width: 80%; } }
 
 .hidden-small {
   display: none; }
@@ -31,17 +90,32 @@ section {
       display: inherit;
       font-size: 14px !important; } }
 
-.clearfix:before,
-.clearfix:after {
-  content: "";
-  display: table; }
-
-.clearfix:after {
-  clear: both; }
-
 .clearfix {
+  clear: both;
+  overflow: auto;
   zoom: 1;
   /* ie 6/7 */ }
+
+.blue-button {
+  width: 180px;
+  background-color: #145173;
+  padding: 10px;
+  font-family: Raleway;
+  letter-spacing: 0.06rem;
+  font-weight: 400 !important;
+  font-size: 14px;
+  font-weight: 100;
+  color: #FCF7E5;
+  border: 1px solid rgba(8, 38, 37, 0.3);
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
+  -moz-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
+  box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53); }
+  .blue-button:hover, .blue-button:active {
+    background-color: #F75849; }
+
+.button-link {
+  text-decoration: none; }
 
 header {
   height: 175px;
@@ -52,7 +126,7 @@ header {
   @media screen and (min-width: 768px) {
     header {
       text-align: left;
-      height: 150px; } }
+      height: 160px; } }
 
 .header-title {
   margin: 0;
@@ -83,9 +157,124 @@ header {
       display: inline-block;
       padding-top: 40px; } }
   .header-icons--icon {
+    height: 150px;
     display: inline-block;
     padding-right: 15px; }
     .header-icons--icon:last-child {
       padding-right: 0; }
     .header-icons--icon a {
       color: #FCF7E5; }
+
+.intro {
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .intro {
+      text-align: left; } }
+  @media screen and (min-width: 992px) {
+    .intro {
+      position: relative; } }
+
+.about {
+  text-align: left;
+  margin: 30px 5%; }
+  @media screen and (min-width: 768px) {
+    .about {
+      width: 60%;
+      margin: 30px 0 60px 0; } }
+  @media screen and (min-width: 992px) {
+    .about {
+      margin-top: 15px;
+      font-size: 1.1rem;
+      padding-bottom: 45px; } }
+  @media screen and (min-width: 1200px) {
+    .about {
+      padding-top: 15px; } }
+
+.about .about--item {
+  padding-bottom: 15px; }
+  @media screen and (min-width: 768px) {
+    .about .about--item {
+      width: 90%; } }
+  .about .about--item:last-child {
+    padding-bottom: 0; }
+
+.nancyPhoto {
+  width: 90%;
+  height: 50vw;
+  margin: auto;
+  background-image: url("../assets/images/nancy.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5%;
+  -webkit-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
+  -moz-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
+  box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53); }
+  @media screen and (min-width: 768px) {
+    .nancyPhoto {
+      width: 40%;
+      height: 30vw;
+      float: right;
+      margin: 5px 0 0 0; } }
+  @media screen and (min-width: 1100px) {
+    .nancyPhoto {
+      width: 340px;
+      height: 340px;
+      margin: 0; } }
+
+.profile-buttons {
+  width: 90%;
+  margin: auto; }
+  @media screen and (min-width: 768px) {
+    .profile-buttons {
+      width: 100%;
+      padding-top: 30px;
+      text-align: center;
+      clear: both; } }
+  @media screen and (min-width: 992px) {
+    .profile-buttons {
+      width: 70%;
+      text-align: left;
+      margin: 0;
+      position: absolute;
+      bottom: 45px;
+      padding-top: 30px; } }
+  @media screen and (min-width: 1100px) {
+    .profile-buttons {
+      bottom: 60px; } }
+
+@media screen and (min-width: 550px) {
+  .profile-buttons .button-link .blue-button {
+    width: 48%;
+    padding: 15px 10px;
+    font-size: 14px; } }
+
+@media screen and (min-width: 768px) {
+  .profile-buttons .button-link .blue-button {
+    width: 35%; } }
+
+@media screen and (min-width: 992px) {
+  .profile-buttons .button-link .blue-button {
+    width: 30%; } }
+
+@media screen and (min-width: 550px) {
+  .view {
+    float: left; } }
+
+@media screen and (min-width: 768px) {
+  .view {
+    float: none; } }
+
+.download {
+  margin-top: 10px; }
+  @media screen and (min-width: 550px) {
+    .download {
+      margin-top: 0;
+      float: right; } }
+  @media screen and (min-width: 768px) {
+    .download {
+      float: none;
+      margin-left: 10%; } }
+  @media screen and (min-width: 992px) {
+    .download {
+      margin-left: 5%; } }
