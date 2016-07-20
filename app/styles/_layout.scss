@@ -1,3 +1,9 @@
+@mixin box-shadow {
+  -webkit-box-shadow: 2px 2px 7px 0px rgba(35, 9, 3, 0.7);
+  -moz-box-shadow: 2px 2px 7px 0px rgba(35, 9, 3, 0.7);
+  box-shadow: 2px 2px 7px 0px rgba(35, 9, 3, 0.7);
+}
+
 .container{
   width: 90%;
   margin: 0 auto;
@@ -29,11 +35,13 @@
   zoom: 1; /* ie 6/7 */
 }
 
+
+
 .blue-button{
   // float: left;
   // width: 35%;
   width: 180px;
-  background-color: $darkblue;
+  background-color: $darkgreen;
   padding: 10px;
   font-family: Raleway;
   letter-spacing: 0.06rem;
@@ -43,13 +51,12 @@
   color: $cream;
   border: 1px solid rgba(8, 38, 37,0.3);
   border-radius: 5px;
-  -webkit-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37,0.53);
-  -moz-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37,0.53);
-  box-shadow: 2px 2px 7px 0px rgba(8, 28, 37,0.53);
+  @include box-shadow;
   // bottom:
   // display: inline-block;
   &:hover, &:active{
-    background-color: $coral;
+    background-color: $lightgreen;
+    color: $black;
   }
 
 }

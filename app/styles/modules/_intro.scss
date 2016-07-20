@@ -44,9 +44,11 @@
   background-position: center;
   background-size: cover;
   border-radius: 5%;
-  -webkit-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37,0.53);
-  -moz-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37,0.53);
-  box-shadow: 2px 2px 7px 0px rgba(8, 28, 37,0.53);
+  @include box-shadow;
+    &:hover, &:active {
+      transition: background-image 0.4s ease-in-out;
+      background-image:url("../assets/images/nancy2.png")
+    }
   @media screen and(min-width: 768px){
     width: 40%;
     height: 30vw;

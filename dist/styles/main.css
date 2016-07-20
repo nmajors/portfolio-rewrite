@@ -48,7 +48,7 @@ table {
 body {
   margin: 0 auto;
   font-family: Raleway;
-  background-color: #FCF7E5;
+  background-color: #F4F2F3;
   padding-bottom: 30px; }
 
 ul {
@@ -61,14 +61,14 @@ section {
   font-size: 1rem;
   letter-spacing: .1rem;
   padding: 30px 7%;
-  background-color: #AEC3C1;
+  background-color: #C1BEAE;
   border-radius: 10px;
   margin-top: 30px;
-  color: #081C25;
+  color: #230903;
   line-height: 1.5;
-  -webkit-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
-  -moz-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
-  box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53); }
+  -webkit-box-shadow: 2px 2px 7px 0px rgba(35, 9, 3, 0.7);
+  -moz-box-shadow: 2px 2px 7px 0px rgba(35, 9, 3, 0.7);
+  box-shadow: 2px 2px 7px 0px rgba(35, 9, 3, 0.7); }
   @media screen and (min-width: 992px) {
     section {
       padding: 45px 7%; } }
@@ -98,31 +98,36 @@ section {
 
 .blue-button {
   width: 180px;
-  background-color: #145173;
+  background-color: #527053;
   padding: 10px;
   font-family: Raleway;
   letter-spacing: 0.06rem;
   font-weight: 400 !important;
   font-size: 14px;
   font-weight: 100;
-  color: #FCF7E5;
+  color: #F4F2F3;
   border: 1px solid rgba(8, 38, 37, 0.3);
   border-radius: 5px;
-  -webkit-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
-  -moz-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
-  box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53); }
+  -webkit-box-shadow: 2px 2px 7px 0px rgba(35, 9, 3, 0.7);
+  -moz-box-shadow: 2px 2px 7px 0px rgba(35, 9, 3, 0.7);
+  box-shadow: 2px 2px 7px 0px rgba(35, 9, 3, 0.7); }
   .blue-button:hover, .blue-button:active {
-    background-color: #F75849; }
+    background-color: #9EBC9F;
+    color: #230903; }
 
 .button-link {
   text-decoration: none; }
 
 header {
   height: 175px;
-  background-color: #145173;
-  color: #FCF7E5;
+  line-height: 1.2;
+  background-color: #4c493d;
+  color: #F4F2F3;
   text-align: center;
-  border-bottom: 10px solid #F75849; }
+  border-bottom: 10px solid #9EBC9F;
+  -webkit-box-shadow: 0px 1px 1px 1px rgba(76, 73, 61, 0.5);
+  -moz-box-shadow: 0px 1px 1px 1px rgba(76, 73, 61, 0.5);
+  box-shadow: 0px 1px 1px 1px rgba(76, 73, 61, 0.5); }
   @media screen and (min-width: 768px) {
     header {
       text-align: left;
@@ -141,7 +146,7 @@ header {
       .header-title--item {
         font-size: 18px; } }
     .header-title--item a {
-      color: #FCF7E5; }
+      color: #F4F2F3; }
   .header-title--item:first-child {
     font-size: 30px; }
     @media screen and (min-width: 768px) {
@@ -163,7 +168,7 @@ header {
     .header-icons--icon:last-child {
       padding-right: 0; }
     .header-icons--icon a {
-      color: #FCF7E5; }
+      color: #F4F2F3; }
 
 .intro {
   text-align: center; }
@@ -207,9 +212,12 @@ header {
   background-position: center;
   background-size: cover;
   border-radius: 5%;
-  -webkit-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
-  -moz-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
-  box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53); }
+  -webkit-box-shadow: 2px 2px 7px 0px rgba(35, 9, 3, 0.7);
+  -moz-box-shadow: 2px 2px 7px 0px rgba(35, 9, 3, 0.7);
+  box-shadow: 2px 2px 7px 0px rgba(35, 9, 3, 0.7); }
+  .nancyPhoto:hover, .nancyPhoto:active {
+    transition: background-image 0.4s ease-in-out;
+    background-image: url("../assets/images/nancy2.png"); }
   @media screen and (min-width: 768px) {
     .nancyPhoto {
       width: 40%;

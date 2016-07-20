@@ -1,9 +1,13 @@
 header {
     height: 175px;
-    background-color: $darkblue;
+    line-height: 1.2;
+    background-color: $darkgray;
     color: $cream;
     text-align: center;
-    border-bottom: 10px solid $coral;
+    border-bottom: 10px solid $lightgreen;
+    -webkit-box-shadow: 0px 1px 1px 1px rgba(76,73,61,0.5);
+    -moz-box-shadow: 0px 1px 1px 1px rgba(76,73,61,0.5);
+    box-shadow: 0px 1px 1px 1px rgba(76,73,61,0.5);
     @media screen and(min-width: 768px) {
         text-align: left;
         height: 160px;
@@ -55,3 +59,14 @@ header {
 
     }
 }
+// i{
+//   height: 62px;
+//   width: 62px;
+//   border-radius: 100%;
+//   background-color: rgba(252,247,229, 0.3);
+//   &::before{
+//     position: absolute;
+//     top: 70px;
+//
+//   }
+// }

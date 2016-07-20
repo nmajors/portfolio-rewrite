@@ -2,6 +2,11 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@mixin box-shadow {
+  -webkit-box-shadow: 2px 2px 7px 0px rgba(35, 9, 3, 0.7);
+  -moz-box-shadow: 2px 2px 7px 0px rgba(35, 9, 3, 0.7);
+  box-shadow: 2px 2px 7px 0px rgba(35, 9, 3, 0.7);
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -68,14 +73,12 @@ section{
   font-size: 1rem;
   letter-spacing: .1rem;
   padding: 30px 7%;
-  background-color: $lightblue;
+  background-color: $lightgray;
   border-radius: 10px;
   margin-top: 30px;
   color: $black;
   line-height: 1.5;
-  -webkit-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37,0.53);
-  -moz-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37,0.53);
-  box-shadow: 2px 2px 7px 0px rgba(8, 28, 37,0.53);
+	@include box-shadow;
   @media screen and(min-width: 992px){
     padding: 45px 7%;
   }
