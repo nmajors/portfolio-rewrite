@@ -68,6 +68,7 @@ class PortfolioController {
             document.body.style.cursor = "default";
             pic.style.backgroundImage = "url('./assets/images/nancy.png')";
           });
+          hoverEl.addEventListener("onClick")
         });
         // let hover = document.querySelector(".surprise");
         // let pic = document.querySelector(".nancyPhoto");
