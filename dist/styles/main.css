@@ -89,7 +89,8 @@ main {
 
 .container {
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 100%; }
   @media screen and (min-width: 1500px) {
     .container {
       width: 1350px; } }
@@ -123,7 +124,6 @@ main {
   text-decoration: none; }
 
 header {
-  min-height: 175px;
   line-height: 1.2;
   background-color: #03263A;
   color: #fff;
@@ -131,6 +131,10 @@ header {
   font-weight: 300 !important;
   letter-spacing: 0.1rem;
   border-bottom: 10px solid #436C87; }
+  @media screen and (min-width: 500px) {
+    header {
+      min-height: 145px;
+      text-align: left; } }
   @media screen and (min-width: 768px) {
     header {
       text-align: left;
@@ -138,15 +142,21 @@ header {
 
 .header-title {
   margin: 0;
-  padding-top: 30px; }
+  padding-top: 15px; }
   @media screen and (min-width: 768px) {
     .header-title {
+      padding-top: 25px;
       display: inline-block; } }
   .header-title--item {
-    font-size: 20px; }
+    font-size: 18px; }
+    @media screen and (min-width: 500px) {
+      .header-title--item {
+        font-size: 16px;
+        width: 90%; } }
     @media screen and (min-width: 768px) {
       .header-title--item {
-        font-size: 18px; } }
+        font-size: 18px;
+        width: 100%; } }
     .header-title--item a {
       color: #fff; }
       .header-title--item a:hover {
@@ -159,15 +169,27 @@ header {
 
 .header-icons {
   margin-top: 15px;
+  margin-bottom: 15px;
   font-size: 32px; }
+  @media screen and (min-width: 500px) {
+    .header-icons {
+      margin-top: 10px;
+      display: inline-block;
+      font-size: 26px; } }
   @media screen and (min-width: 768px) {
     .header-icons {
+      margin-bottom: 30px;
       float: right;
-      display: inline-block;
-      padding-top: 40px; } }
+      font-size: 32px;
+      position: relative;
+      top: 50%;
+      transform: translateY(calc(-50% - 10px)); } }
   .header-icons--icon {
     display: inline-block;
     padding-right: 15px; }
+    @media screen and (min-width: 500px) {
+      .header-icons--icon {
+        padding-right: 10px; } }
     .header-icons--icon:last-child {
       padding-right: 0; }
     .header-icons--icon a {
