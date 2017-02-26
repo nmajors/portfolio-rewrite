@@ -55,6 +55,30 @@
         color: $black;
     }
 }
+.accent-button{
+  background-color: $accent;
+  font-weight: 400 !important;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  display: inline-block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid $darkblue;
+  border-radius: 2px;
+  width: 110px;
+  text-shadow: 0 1px 1px $darkblue;
+  &:hover{
+    background-color: #9C181D;
+  }
+}
+.accent-button a, .accent-button a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+div.accent-button:last-of-type{
+  margin-left: 5%;
+}
 
 .button-link {
     text-decoration: none;

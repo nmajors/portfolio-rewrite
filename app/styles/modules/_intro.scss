@@ -1,6 +1,10 @@
+// .intro{
+//   padding: 30px;
+// }
 .about {
-    text-align: center;
-    font-size: 14px;
+    // margin-top: 15px;
+    text-align: left;
+    font-size: 15px;
     @media screen and(min-width: 500px) {
         text-align: left;
     }
@@ -21,6 +25,7 @@
       background-size: cover;
       border: 1px solid $darkblue;
       @media screen and(min-width: 500px) {
+        margin: 0 auto 30px auto;
           // text-align: center;
           width: 40%;
           height: 30vw;
@@ -40,6 +45,7 @@
   }
 }
 .about--content {
+
     @media screen and(min-width: 768px) {
         width: calc(70% - 30px);
     }
@@ -74,8 +80,10 @@
 
 .profile-buttons {
     width: 90%;
-    margin: auto;
+    margin: 30px auto 0 auto;
+    text-align: center;
     @media screen and(min-width: 500px) {
+      margin: auto;
         padding-top: 30px;
     }
     @media screen and(min-width: 768px) {
@@ -88,6 +96,11 @@
 }
 
 .profile-buttons .button-link .darkblue-button {
+  // padding: 10px 7px;
+  padding: 10px;
+width: 40%;
+display: inline-block;
+text-align: center;
     @media screen and(min-width: 500px) {
         width: 40%;
         padding: 10px 7px;
@@ -100,10 +113,19 @@
     @media screen and(min-width: 990px) {
         font-size: 14px;
     }
+.fa-file-pdf-o{
+  display: none;
+  @media screen and(min-width: 500px) {
+    display: inline;
+  }
+}
 }
 .view {
+// float: left;
+  margin-bottom: 15px;
     @media screen and(min-width: 500px) {
         float: left;
+        margin-bottom:auto;
     }
     @media screen and(min-width: 768px) {
         float: none;
@@ -111,7 +133,10 @@
 }
 
 .download {
+  // float: right;
+    margin-left: 10%;
     @media screen and(min-width: 500px) {
+      margin: auto;
         float: right;
     }
 }
