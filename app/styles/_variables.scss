@@ -4,13 +4,25 @@
 // $coral: #F75849;
 // $darkblue: #145173;
 // $black: #081C25;
+@mixin box-shadow {
+    -webkit-box-shadow: 2px 2px 7px 0 rgba(35, 9, 3, 0.7);
+    -moz-box-shadow: 2px 2px 7px 0 rgba(35, 9, 3, 0.7);
+    box-shadow: 2px 2px 7px 0 rgba(35, 9, 3, 0.7);
+}
 
 
 
+$gray: #A6A092;
+// $darkblue: #1c1a19;
+$darkblue: #03263A;
+// $darkblue: #6A110B;
+// $lightgreen: #822726;
+$lightgreen: #27536F;
+// $lightblue: #123b56;
+$lightblue: #436C87;
+$lighterblue: #6A8CA2;
+$lightgray: #F0F1F3;
 
-$lightgray: #C1BEAE;
-$darkgray: #4c493d;
-$lightgreen: #9EBC9F;
-$darkgreen: #527053;
-$cream: #F4F2F3;
+
+
 $black: #230903;

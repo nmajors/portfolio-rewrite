@@ -2,11 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@mixin box-shadow {
-  -webkit-box-shadow: 2px 2px 7px 0px rgba(35, 9, 3, 0.7);
-  -moz-box-shadow: 2px 2px 7px 0px rgba(35, 9, 3, 0.7);
-  box-shadow: 2px 2px 7px 0px rgba(35, 9, 3, 0.7);
-}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -21,12 +16,12 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
+	// margin: 0;
+	// padding: 0;
+	// border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+	// vertical-align: baseline;s
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -52,14 +47,24 @@ table {
 	border-spacing: 0;
 }
 
+// html {
+//     overflow: hidden;
+//     height: 100%;
+// }
+//
+// body {
+//     height: 100%;
+//     overflow: auto;
+// }
 
 
 
 
 body{
+  // position: relative;
   margin: 0 auto;
-  font-family: Raleway;
-  background-color: $cream;
+  font-family: Open Sans;
+  background-color: $gray;
   padding-bottom: 30px;
 }
 ul{
@@ -72,17 +77,35 @@ a{
 section{
   font-size: 1rem;
   letter-spacing: .1rem;
-  padding: 30px 7%;
+
   background-color: $lightgray;
-  border-radius: 10px;
-  margin-top: 30px;
+  border: 1px solid $darkblue;
+  // border-radius: 10px;
+  margin-top: 15px;
   color: $black;
   line-height: 1.5;
-	@include box-shadow;
-  @media screen and(min-width: 992px){
-    padding: 45px 7%;
+  font-weight: 500;
+  padding: 30px 7%;
+	// @include box-shadow;
+    @media screen and(min-width: 500px){
+      padding: 30px;
+    }
+  @media screen and(min-width: 768px){
+    margin-top: 30px;
+
   }
-  @media screen and(min-width: 1500px){
-    padding: 45px 10%;
-  }
+  // @media screen and(min-width: 992px){
+  //   padding: 45px 7%;
+  // }
+  // @media screen and(min-width: 1500px){
+  //   padding: 45px 10%;
+  // }
+}
+main{
+  border-top: 1px solid $darkblue;
+}
+@mixin box-shadow {
+    -webkit-box-shadow: 2px 2px 7px 0 rgba(35, 9, 3, 0.7);
+    -moz-box-shadow: 2px 2px 7px 0 rgba(35, 9, 3, 0.7);
+    box-shadow: 2px 2px 7px 0 rgba(35, 9, 3, 0.7);
 }

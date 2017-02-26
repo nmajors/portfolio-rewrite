@@ -1,65 +1,222 @@
 <header>
-  <div class="container">
-    <ul class="header-title">
-      <li class="header-title--item">Nancy Majors Smith</li>
-      <li class="header-title--item">Front End Developer</li>
-      <li class="header-title--item hidden-small">
-        <a href="mailto:nmajors@gmail.com" title="nmajors@gmail.com">nmajors@gmail.com</a>
-      </li>
-    </ul>
-    <ul class="header-icons">
-      <li class="header-icons--icon">
-        <a href="mailto:nmajors@gmail.com" target="_blank" title="nmajors@gmail.com">
-          <i class="fa fa-envelope-o"></i></a>
-      </li>
-      <li class="header-icons--icon">
-        <a href="https://github.com/nmajors" target="_blank" title="https://github.com/nmajors">
-          <i class="fa fa-github"></i></a>
-      </li>
-      <li class="header-icons--icon">
-        <a href="https://www.linkedin.com/in/nmajorssmith" target="_blank" title="https://www.linkedin.com/in/nmajorssmith">
-          <i class="fa fa-linkedin"></i></a>
-      </li>
+    <div class="container">
+        <ul class="header-title">
+            <li class="header-title--item name">Nancy Majors Smith</li>
+            <li class="header-title--item">Developer, Business Analyst, Agile Enthusiast.</li>
+            <li class="header-title--item">SAFe 4.0 Certified PM/PO</li>
+            <!-- <li class="header-title--item">Cross-functional as heck.</li> -->
+            <li class="header-title--item hidden-small">
+                <a href="mailto:nmajors@gmail.com" title="nmajors@gmail.com">nmajors@gmail.com</a>
+            </li>
+        </ul>
+        <ul class="header-icons">
+            <li class="header-icons--icon">
+                <a class="hover" href="mailto:nmajors@gmail.com" target="_blank" title="nmajors@gmail.com">
+                    <i class="fa fa-envelope-o"></i></a>
+            </li>
+            <li class="header-icons--icon">
+                <a class="hover" href="https://github.com/nmajors" target="_blank" title="https://github.com/nmajors">
+                    <i class="fa fa-github"></i></a>
+            </li>
+            <li class="header-icons--icon">
+                <a class="hover" href="https://www.linkedin.com/in/nmajorssmith" target="_blank" title="https://www.linkedin.com/in/nmajorssmith">
+                    <i class="fa fa-linkedin"></i></a>
+            </li>
 
-    </ul>
+        </ul>
 
-  </div>
+    </div>
 </header>
 
 <main>
-  <div class="container">
-    <section class="intro clearfix">
+    <div class="container">
+        <section class="intro clearfix">
+            <div class="about">
+              <div class="about--photo">
+                <div class="nancyPhoto">
+                    <!-- <img src="/assets/images/nancy.png" alt="Nancy Majors Smith"/> -->
+                </div>
+              </div>
 
+              <div class="about--content">
+                <p class="about--item">
+                    <!--TODO: fix hotlink of background-image-->
+                    Biologist turned software developer through the Front End Engineering program at The Iron Yard and Business Analyst
+                    <span class="surprise"> / </span>Scrum Master
+                    <span class="surprise"> / </span>Product Manager
+                    <span class="surprise"> / </span>Agilist through UST Global at Walmart Technology.
 
-     <div class="nancyPhoto">
-       <!-- <img src="/assets/images/nancy.png" alt="Nancy Majors Smith"/> -->
-     </div>
-     <ul class="about">
-       <li class="about--item">
-         Biologist turned software developer through the Front End Engineering program at The Iron Yard.
-       </li>
-       <li class="about--item">
-         Subscriber to a clean, simple, and user friendly aesthetic.
-       </li>
-       <li class="about--item">
-         Student of meteorology, astronomy, microbiology, loud music, and silly puns.
-       </li>
-     </ul>
-     <div class="profile-buttons">
-       <a class="button-link" target="_blank" href="./assets/documents/Resume-NMS-Dev.pdf">
-         <button class="blue-button view">
-           <i class="fa fa-file-pdf-o" aria-hidden="true"></i> View Resume
-         </button>
-       </a>
+                </p>
+                <p class="about--item">
+                    Subscriber to a clean, simple, and user friendly aesthetic.  Constantly seeking the why.
+                </p>
+                <p class="about--item">
+                    Student of meteorology, astronomy, microbiology, loud music, and silly puns.
+                </p>
+                <p class="about--item">Cross-functional as heck.</p>
+              </div>
 
-       <a class="button-link" target="_blank" href="https://docs.google.com/document/d/11nqcbjVimFtFIFQpy1fJUULX_7-w0TPHiRi8-hPdx1k/export?format=pdf">
-         <button class="blue-button download" id="resume-download">
-           <i class="fa fa-file-pdf-o"></i> Download Resume
-         </button>
-       </a>
-     </div>
+              <div class="profile-buttons">
+                    <a class="button-link" target="_blank" href="./assets/documents/Resume-NMS-Dev.pdf">
+                        <button class="lightblue-button view">
+                      <i class="fa fa-file-pdf-o" aria-hidden="true"></i> View Resume
+                    </button>
+                    </a>
 
-    </section>
+                    <a class="button-link" href="https://docs.google.com/document/d/11nqcbjVimFtFIFQpy1fJUULX_7-w0TPHiRi8-hPdx1k/export?format=pdf">
+                        <button class="lightblue-button download" id="resume-download">
+                          <i class="fa fa-file-pdf-o"></i> Download Resume
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="project clearfix">
+            <div class="entry">
+
+                <div class="entry--img is-hidden clearfix">
+                    <div class="entry--name">
+                        <h1>Weather Watcher</h1></div>
+                </div>
+                <div class="entry--content is-hidden">
+                    <!-- <h3>Weather Watcher</h3> -->
+                    <h2>Weather Watcher</h2>
+                    <span class="entry--location">Final Project</span>
+                    <p>My final project for The Iron Yard. A fully responsive web app where each user can save addresses for their friends and family and keep track of weather conditions and severe weather situations for all of their saved locations in one
+                        place.
+                    </p>
+                    <p>Promises. Promises everywhere. Geolocate the user then Geocode their location then get the weather for their current location then get their saved locations then get the weather for their saved locations then assign the map marker
+                        icon to each location according to the current weather for that location. Broken Promises = broken project.</p>
+                    <ul class="tags">
+                        <li>HTML</li>
+                        <li>CSS/SASS</li>
+                        <li>AngularJS</li>
+                        <li>Firebase</li>
+                        <li>Angular Google Maps</li>
+                        <li>OpenWeatherMap API</li>
+                        <li>Bootstrap form styles</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="project clearfix">
+            <div class="entry">
+
+                <div class="entry--img is-hidden clearfix">
+
+                </div>
+                <div class="entry--content is-hidden">
+                    <!-- <h3>Weather Watcher</h3> -->
+                    <h2>Weather Watcher</h2>
+                    <span class="entry--location">Final Project</span>
+                    <p>My final project for The Iron Yard. A fully responsive web app where each user can save addresses for their friends and family and keep track of weather conditions and severe weather situations for all of their saved locations in one
+                        place.
+                    </p>
+                    <p>Promises. Promises everywhere. Geolocate the user then Geocode their location then get the weather for their current location then get their saved locations then get the weather for their saved locations then assign the map marker
+                        icon to each location according to the current weather for that location. Broken Promises = broken project.</p>
+                    <ul class="tags">
+                        <li>HTML</li>
+                        <li>CSS/SASS</li>
+                        <li>AngularJS</li>
+                        <li>Firebase</li>
+                        <li>Angular Google Maps</li>
+                        <li>OpenWeatherMap API</li>
+                        <li>Bootstrap form styles</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="project clearfix">
+            <div class="entry">
+                <div class="entry--img is-hidden clearfix">
+
+                </div>
+                <div class="entry--content is-hidden">
+                    <!-- <h3>Weather Watcher</h3> -->
+                    <h2>Weather Watcher</h2>
+                    <span class="entry--location">Final Project</span>
+                    <p>My final project for The Iron Yard. A fully responsive web app where each user can save addresses for their friends and family and keep track of weather conditions and severe weather situations for all of their saved locations in one
+                        place.
+                    </p>
+                    <p>Promises. Promises everywhere. Geolocate the user then Geocode their location then get the weather for their current location then get their saved locations then get the weather for their saved locations then assign the map marker
+                        icon to each location according to the current weather for that location. Broken Promises = broken project.</p>
+                    <ul class="tags">
+                        <li>HTML</li>
+                        <li>CSS/SASS</li>
+                        <li>AngularJS</li>
+                        <li>Firebase</li>
+                        <li>Angular Google Maps</li>
+                        <li>OpenWeatherMap API</li>
+                        <li>Bootstrap form styles</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="project clearfix">
+            <div class="entry">
+                <div class="entry--img is-hidden clearfix">
+                    <div class="entry--name">
+                        Weather Watcher
+                    </div>
+                </div>
+                <div class="entry--content is-hidden">
+                    <!-- <h3>Weather Watcher</h3> -->
+                    <h2>Weather Watcher</h2>
+                    <span class="entry--location">Final Project</span>
+                    <p>My final project for The Iron Yard. A fully responsive web app where each user can save addresses for their friends and family and keep track of weather conditions and severe weather situations for all of their saved locations in one
+                        place.
+                    </p>
+                    <p>Promises. Promises everywhere. Geolocate the user then Geocode their location then get the weather for their current location then get their saved locations then get the weather for their saved locations then assign the map marker
+                        icon to each location according to the current weather for that location. Broken Promises = broken project.</p>
+                    <ul class="tags">
+                        <li>HTML</li>
+                        <li>CSS/SASS</li>
+                        <li>AngularJS</li>
+                        <li>Firebase</li>
+                        <li>Angular Google Maps</li>
+                        <li>OpenWeatherMap API</li>
+                        <li>Bootstrap form styles</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<!-- <section class="projects" ng-repeat="project in portfolioCtrl.projects">
+  <div class="projects-container">
+    <ul class="projects-grid">
+      <li>
+        <div class="project" ng-style="{'background-image':'url({{ project.screenshot }})', 'background-size': 'cover'}">
+          <div class="project-name">
+            <h3>{{ project.name }}</h3>
+          </div>
+        </div>
+      </li>
+
+      <li>
+          <div class="description">
+          <p>
+            {{ project.description }}
+            </br>
+            <div class="project-buttons">
+              <a class="button-link" href="{{ project.site }}">
+                <button class="project-button">Live Site</button>
+              </a>
+              <a class="button-link" href="{{ project.code }}">
+                <button class="project-button button2">View Code</button>
+              </a>
+            </div>
+          </p>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+  <p class="tech"><span class="bold">Tools and Technologies:</span> {{ project.tech }}</p>
+</section>
 
   </div>
 

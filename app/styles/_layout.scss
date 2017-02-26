@@ -1,67 +1,60 @@
-@mixin box-shadow {
-  -webkit-box-shadow: 2px 2px 7px 0px rgba(35, 9, 3, 0.7);
-  -moz-box-shadow: 2px 2px 7px 0px rgba(35, 9, 3, 0.7);
-  box-shadow: 2px 2px 7px 0px rgba(35, 9, 3, 0.7);
+
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
 }
 
-.container{
-  width: 90%;
-  margin: 0 auto;
-  @media screen and(min-width: 1200px){
-    width: 80%;
-  }
+.clearfix:after {
+  clear: both;
 }
-.hidden-small{
-  display: none;
-  @media screen and(min-width: 768px){
-    display: inherit;
-    font-size: 14px !important;
-  }
-}
-
-// .clearfix:before,
-// .clearfix:after {
-//   content: "";
-//   display: table;
-// }
-//
-// .clearfix:after {
-//   clear: both;
-// }
 
 .clearfix {
-  clear: both;
-  overflow: auto;
-  zoom: 1; /* ie 6/7 */
+    clear: both;
+    overflow: auto;
+    zoom: 1;
+    /* ie 6/7 */
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    @media screen and(min-width: 1500px){
+      width: 1350px;
+    }
 }
 
 
-
-.blue-button{
-  // float: left;
-  // width: 35%;
-  width: 180px;
-  background-color: $darkgreen;
-  padding: 10px;
-  font-family: Raleway;
-  letter-spacing: 0.06rem;
-  font-weight: 400 !important;
-  font-size: 14px;
-  font-weight: 100;
-  color: $cream;
-  border: 1px solid rgba(8, 38, 37,0.3);
-  border-radius: 5px;
-  @include box-shadow;
-  // bottom:
-  // display: inline-block;
-  &:hover, &:active{
-    background-color: $lightgreen;
-    color: $black;
-  }
-
+.hidden-small {
+    display: none;
+    @media screen and(min-width: 768px) {
+        display: inherit;
+        font-size: 14px !important;
+    }
 }
 
-.button-link{
-  text-decoration: none;
 
+.lightblue-button {
+    width: 180px;
+    background-color: $darkblue;
+    padding: 15px 10px;
+    font-family: Open Sans;
+    letter-spacing: 0.06rem;
+    font-weight: 400 !important;
+    font-size: 14px;
+    // font-weight: 100;
+    color: #fff;
+    border: 1px solid rgba(8, 38, 37,0.3);
+    border-radius: 2px;
+    @include box-shadow;
+    &:active,
+    &:hover {
+        background-color: $lightgreen;
+        color: $black;
+    }
+}
+
+.button-link {
+    text-decoration: none;
 }

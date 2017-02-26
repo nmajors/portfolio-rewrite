@@ -1,121 +1,126 @@
-.intro{
-  text-align: center;
-  @media screen and(min-width: 768px){
-    text-align: left;
-  }
-  @media screen and(min-width: 992px){
-    position: relative;
-  }
-}
-
-.about{
-  text-align: left;
-  margin: 30px 5%;
-  @media screen and(min-width: 768px){
-    width: 60%;
-    margin: 30px 0 60px 0;
-  }
-  @media screen and(min-width: 992px){
-    margin-top: 15px;
-    font-size: 1.1rem;
-    padding-bottom: 45px;
-  }
-  @media screen and(min-width: 1200px){
-    padding-top: 15px;
-  }
-}
-
-.about .about--item{
-  padding-bottom: 15px;
-  @media screen and(min-width: 768px){
-    width: 90%;
-  }
-  &:last-child{
-    padding-bottom: 0;
-  }
-}
-
-.nancyPhoto{
-  width: 90%;
-  height: 50vw;
-  margin: auto;
-  background-image:url("../assets/images/nancy.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 5%;
-  @include box-shadow;
-    &:hover, &:active {
-      transition: background-image 0.4s ease-in-out;
-      background-image:url("../assets/images/nancy2.png")
-    }
-  @media screen and(min-width: 768px){
-    width: 40%;
-    height: 30vw;
-    float: right;
-    margin: 5px 0 0 0;
-  }
-  @media screen and(min-width: 1100px){
-    width: 340px;
-    height: 340px;
-    margin: 0;
-  }
-}
-
-.profile-buttons{
-  width: 90%;
-  margin: auto;
-  @media screen and(min-width: 768px){
-    width: 100%;
-    padding-top: 30px;
+.about {
     text-align: center;
-    clear: both;
-  }
-  @media screen and(min-width: 992px){
-    width: 70%;
-    text-align: left;
-    margin: 0;
-    position: absolute;
-    bottom: 45px;
-    padding-top: 30px;
-  }
-  @media screen and(min-width: 1100px){
-    bottom: 60px;
-  }
-}
-.profile-buttons .button-link .blue-button{
-  @media screen and(min-width: 550px){
-    width: 48%;
-    padding: 15px 10px;
     font-size: 14px;
-  }
-  @media screen and(min-width: 768px){
-    width: 35%;
-  }
-  @media screen and(min-width: 992px){
-    width: 30%;
-  }
+    @media screen and(min-width: 500px) {
+        text-align: left;
+    }
+    @media screen and(min-width: 768px) {
+        position: relative;
+        font-size: 16px;
+        padding: 15px;
+    }
 }
 
-.view{
-  @media screen and(min-width: 550px){
-    float: left;
-  }
-  @media screen and(min-width: 768px){
-    float:none;
-  }
+.about--content {
+    @media screen and(min-width: 768px) {
+        width: calc(70% - 30px);
+    }
 }
-.download{
-  margin-top: 10px;
-  @media screen and(min-width: 550px){
-    margin-top: 0;
-    float: right;
-  }
-  @media screen and(min-width: 768px){
-    float:none;
-    margin-left: 10%;
-  }
-  @media screen and(min-width: 992px){
-    margin-left: 5%;
-  }
+
+.about .about--content .about--item {
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+}
+
+.about p:last-of-type {
+    @media screen and(min-width: 500px) {
+        margin-bottom: 0;
+    }
+    @media screen and(min-width: 768px) {
+        padding-bottom: 0;
+        display: inline;
+    }
+    @media screen and(min-width: 990px) {
+        display: block;
+        padding-bottom: 30px;
+    }
+}
+
+.nancyPhoto {
+    width: 80%;
+    height: 50vw;
+    margin: 0 auto 30px auto;
+    background-image: url("../assets/images/nancy.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid $darkblue;
+    @media screen and(min-width: 500px) {
+        // text-align: center;
+        width: 40%;
+        height: 30vw;
+        min-width: 210px;
+    }
+    @media screen and(min-width: 768px) {
+        width: 30%;
+        height: 20vw;
+        float: right;
+    }
+
+    @media screen and(min-width: 1100px) {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+    }
+}
+
+.surprise {
+    color: $darkblue;
+    text-decoration: none;
+}
+
+.surprise a:visited {
+    color: $darkblue;
+    text-decoration: none;
+}
+
+.profile-buttons {
+    width: 90%;
+    margin: auto;
+    @media screen and(min-width: 500px) {
+        padding-top: 30px;
+    }
+    @media screen and(min-width: 768px) {
+        width: calc(60% - 2px);
+        display: inline-block;
+        padding-top: 0;
+        text-align: center;
+        clear: both;
+    }
+}
+
+.profile-buttons .button-link .lightblue-button {
+    @media screen and(min-width: 500px) {
+        width: 40%;
+        padding: 10px 7px;
+    }
+    @media screen and(min-width: 768px) {
+        width: 45%;
+        font-size: 12px;
+        padding: 15px 10px;
+    }
+    @media screen and(min-width: 990px) {
+        font-size: 14px;
+    }
+}
+
+.view {
+    @media screen and(min-width: 500px) {
+        float: left;
+    }
+    @media screen and(min-width: 768px) {
+        float: none;
+    }
+}
+
+.download {
+    @media screen and(min-width: 500px) {
+        float: right;
+    }
 }
