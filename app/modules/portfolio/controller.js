@@ -66,7 +66,7 @@ class PortfolioController {
           hoverEl.addEventListener("mouseleave", (evn) =>{
             console.log("bye");
             document.body.style.cursor = "default";
-            pic.style.backgroundImage = "url('../assets/images/nancy.png')";
+            pic.style.backgroundImage = "url('./assets/images/nancy.png')";
           });
         });
         // let hover = document.querySelector(".surprise");
