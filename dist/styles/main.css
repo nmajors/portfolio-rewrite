@@ -89,7 +89,8 @@ main {
 
 .container {
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 100%; }
   @media screen and (min-width: 1500px) {
     .container {
       width: 1350px; } }
@@ -101,7 +102,7 @@ main {
       display: inherit;
       font-size: 14px !important; } }
 
-.lightblue-button {
+.darkblue-button {
   width: 180px;
   background-color: #03263A;
   padding: 15px 10px;
@@ -115,7 +116,7 @@ main {
   -webkit-box-shadow: 2px 2px 7px 0 rgba(35, 9, 3, 0.7);
   -moz-box-shadow: 2px 2px 7px 0 rgba(35, 9, 3, 0.7);
   box-shadow: 2px 2px 7px 0 rgba(35, 9, 3, 0.7); }
-  .lightblue-button:active, .lightblue-button:hover {
+  .darkblue-button:active, .darkblue-button:hover {
     background-color: #27536F;
     color: #230903; }
 
@@ -123,7 +124,6 @@ main {
   text-decoration: none; }
 
 header {
-  min-height: 175px;
   line-height: 1.2;
   background-color: #03263A;
   color: #fff;
@@ -131,6 +131,10 @@ header {
   font-weight: 300 !important;
   letter-spacing: 0.1rem;
   border-bottom: 10px solid #436C87; }
+  @media screen and (min-width: 500px) {
+    header {
+      min-height: 145px;
+      text-align: left; } }
   @media screen and (min-width: 768px) {
     header {
       text-align: left;
@@ -138,15 +142,21 @@ header {
 
 .header-title {
   margin: 0;
-  padding-top: 30px; }
+  padding-top: 15px; }
   @media screen and (min-width: 768px) {
     .header-title {
+      padding-top: 25px;
       display: inline-block; } }
   .header-title--item {
-    font-size: 20px; }
+    font-size: 18px; }
+    @media screen and (min-width: 500px) {
+      .header-title--item {
+        font-size: 16px;
+        width: 90%; } }
     @media screen and (min-width: 768px) {
       .header-title--item {
-        font-size: 18px; } }
+        font-size: 18px;
+        width: 100%; } }
     .header-title--item a {
       color: #fff; }
       .header-title--item a:hover {
@@ -159,15 +169,27 @@ header {
 
 .header-icons {
   margin-top: 15px;
+  margin-bottom: 15px;
   font-size: 32px; }
+  @media screen and (min-width: 500px) {
+    .header-icons {
+      margin-top: 10px;
+      display: inline-block;
+      font-size: 26px; } }
   @media screen and (min-width: 768px) {
     .header-icons {
+      margin-bottom: 30px;
       float: right;
-      display: inline-block;
-      padding-top: 40px; } }
+      font-size: 32px;
+      position: relative;
+      top: 50%;
+      transform: translateY(calc(-50% - 10px)); } }
   .header-icons--icon {
     display: inline-block;
     padding-right: 15px; }
+    @media screen and (min-width: 500px) {
+      .header-icons--icon {
+        padding-right: 10px; } }
     .header-icons--icon:last-child {
       padding-right: 0; }
     .header-icons--icon a {
@@ -187,15 +209,45 @@ header {
       font-size: 16px;
       padding: 15px; } }
 
+.about--photo .nancyPhoto {
+  width: 80%;
+  height: 50vw;
+  margin: 0 auto 30px auto;
+  background-image: url("../assets/images/nancy.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid #03263A; }
+  @media screen and (min-width: 500px) {
+    .about--photo .nancyPhoto {
+      width: 40%;
+      height: 30vw;
+      min-width: 210px; } }
+  @media screen and (min-width: 768px) {
+    .about--photo .nancyPhoto {
+      width: 30%;
+      height: 20vw;
+      float: right; } }
+  @media screen and (min-width: 1100px) {
+    .about--photo .nancyPhoto {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      transform: translateY(-50%); } }
+
 @media screen and (min-width: 768px) {
   .about--content {
     width: calc(70% - 30px); } }
 
-.about .about--content .about--item:first-child {
+.about--content .about--item:first-child {
   margin-top: 0; }
 
-.about .about--content .about--item:last-child {
+.about--content .about--item:last-child {
   padding-bottom: 0; }
+
+.about--content .surprise, .about--content a.surprise:visited {
+  color: #03263A;
+  text-decoration: none; }
 
 @media screen and (min-width: 500px) {
   .about p:last-of-type {
@@ -210,40 +262,6 @@ header {
   .about p:last-of-type {
     display: block;
     padding-bottom: 30px; } }
-
-.nancyPhoto {
-  width: 80%;
-  height: 50vw;
-  margin: 0 auto 30px auto;
-  background-image: url("../assets/images/nancy.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border: 1px solid #03263A; }
-  @media screen and (min-width: 500px) {
-    .nancyPhoto {
-      width: 40%;
-      height: 30vw;
-      min-width: 210px; } }
-  @media screen and (min-width: 768px) {
-    .nancyPhoto {
-      width: 30%;
-      height: 20vw;
-      float: right; } }
-  @media screen and (min-width: 1100px) {
-    .nancyPhoto {
-      position: absolute;
-      top: 50%;
-      right: 15px;
-      transform: translateY(-50%); } }
-
-.surprise {
-  color: #03263A;
-  text-decoration: none; }
-
-.surprise a:visited {
-  color: #03263A;
-  text-decoration: none; }
 
 .profile-buttons {
   width: 90%;
@@ -260,18 +278,18 @@ header {
       clear: both; } }
 
 @media screen and (min-width: 500px) {
-  .profile-buttons .button-link .lightblue-button {
+  .profile-buttons .button-link .darkblue-button {
     width: 40%;
     padding: 10px 7px; } }
 
 @media screen and (min-width: 768px) {
-  .profile-buttons .button-link .lightblue-button {
+  .profile-buttons .button-link .darkblue-button {
     width: 45%;
     font-size: 12px;
     padding: 15px 10px; } }
 
 @media screen and (min-width: 990px) {
-  .profile-buttons .button-link .lightblue-button {
+  .profile-buttons .button-link .darkblue-button {
     font-size: 14px; } }
 
 @media screen and (min-width: 500px) {

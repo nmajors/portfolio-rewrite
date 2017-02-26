@@ -20,6 +20,7 @@
 .container {
     width: 90%;
     margin: 0 auto;
+    height: 100%;
     @media screen and(min-width: 1500px){
       width: 1350px;
     }
@@ -35,7 +36,7 @@
 }
 
 
-.lightblue-button {
+.darkblue-button {
     width: 180px;
     background-color: $darkblue;
     padding: 15px 10px;
