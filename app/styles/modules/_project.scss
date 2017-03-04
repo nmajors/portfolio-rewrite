@@ -1,28 +1,43 @@
 // .project--screenshot {
 //   width: 30%;
 // }
-// section.project:nth-of-type(odd){
-// 	background-color: $lightgray;
-//   @media screen and(min-width: 500px){
-//     background-color:inherit;
-//   }
-// }
+section.project:nth-of-type(even){
+	background-color: $lightgray;
+
+  @media screen and(min-width: 500px){
+
+
+  }
+}
 // section.project:nth-of-type(even){
 // 	background-color: $lightgray;
 // }
+.project{
+  // padding: 15px;
+  padding: 0;
+  // margin-top: 0;
+    border-bottom: 1px solid $darkblue;
+  @media screen and(min-width: 500px){
+    padding: 30px 7%;
+    // border-bottom: none;
+  }
+}
 
 .entry--img {
-  width: 200px;
-  height: 200px;
+  position: relative;
+  width: 228px;
+  height: 228px;
   border-radius: 50%;
+  margin: 15px auto 0 auto;
   border: 1px solid #03263A;
   transition: all 0.4s ease-in-out;
-  transition: border-radius 0.4s ease-in-out;
-  margin: 0 auto 30px auto;
   background-image: url("../assets/images/weather-watcher.png");
   background-size: cover;
-  box-shadow: inset 0 0 0 160px rgba(92, 14, 17, 0.8),
-    inset 0 0 0 16px rgba(255, 255, 255, 0.3);
+  // box-shadow: inset 0 0 0 160px rgba(92, 14, 17, 0.7),
+  // inset 0 0 0 16px rgba(255, 255, 255, 0.3);
+  @media screen and(min-width: 500px){
+    margin: 0 auto 30px auto;
+  }
   @media screen and(min-width: 768px){
     display: inline-block;
     float: left;
@@ -31,12 +46,21 @@
     border-radius: 5%;
     box-shadow: none;
   }
+  &:active{
+    border-radius: 5%;
+    box-shadow: none;
+  }
 
 }
 
 .entry {
     position: relative;
-    margin: 2rem 0;
+    @media screen and(min-width: 500px){
+          background-color: white;
+      border: none;
+      background-color: inherit;
+      margin: 2rem 0;
+    }
 }
 
 .entry:first-child {
@@ -49,11 +73,16 @@
 
 .entry--content {
     font-size: 15px;
-    position: relative;
-    background: white;
-    padding: 1rem;
-    border: 1px solid $darkblue;
-    margin-bottom: 15px;
+
+    padding: 15px 15px 0 15px;
+
+    @media screen and(min-width: 500px){
+          background-color: white;
+          margin-bottom: 15px;
+      border: 1px solid $darkblue;
+      position: relative;
+      padding: 1rem;
+    }
 
 }
 .entry--content p:last-of-type{
@@ -106,31 +135,54 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  overflow: hidden;
-  backface-visibility: hidden;
+  // overflow: hidden;
+  // backface-visibility: hidden;
   text-align: center;
+  position: absolute;
+  top: 0;
+  // z-index: 99;
+  overflow:visible;
+  box-shadow: inset 0 0 0 160px rgba(92, 14, 17, 0.7),
+  inset 0 0 0 16px rgba(255, 255, 255, 0.3);
+  transition: all 0.4s ease-in-out;
   h1 {
-    transition: transform 0.4s ease-in-out, padding 0.38s ease-in-out;
-    transform: scale(1);
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-shadow: 0 1px 2px rgba(8, 28, 37,0.9);
-    margin: 0 15px;
-    padding: 65px 0 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    // margin: 0 15px;
+    // padding: 65px 0 0;
     font-size: 24px !important;
       @media screen and(min-width: 600px){
       font-size: 22px;
-      margin: 0 30px;
-      padding: 130px 0 0;
+      // margin: 0 30px;
+      // padding: 130px 0 0;
     }
   }
 }
-.entry--name:hover > h1{
-  // padding: 190px 0 0;
+.entry--name:hover{
+  border-radius: 5%;
+  box-shadow: none;
+}
+.scale-out{
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+  transform: scale(1);
+}
+.entry--name:hover > div.scale-out{
   transform: scale(0);
   opacity: 1;
 }
+
+// .entry--name:active > div.scale-out{
+//   transform: scale(0);
+//   opacity: 1;
+// }
 .entry:after {
     content: "";
     display: table;
@@ -139,20 +191,55 @@
 
 .entry-buttons{
   text-align: center;
+  // position: absolute;
+  // width: 50%;
+  // top: 115px;
+  // right: -15px;
+  // transform: translateY(-50%);
+  // transform: translate(50%, -50%);
+  // @media screen and(min-width: 500px){
+  //   position: inherit;
+  //   width: 100%;
+  // }
+// .accent-button{
+//     margin-bottom: 15px;
+//   }
+}
+.tools{
+  // padding: 15px;
+      // background-color: rgba(92, 14, 17, 0.7);
+      // background-color: $darkblue;
+      // color: white;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 1.6;
+      border-radius: 2px;
+      padding-bottom: 15px;
+
+  h2{
+  // font-size: 1.3rem;
+  color: white;
+  margin: 0 0 9px 0;
+  }
+
+}
+.tags{
+  // text-align: center;
+  text-align: center;
+  margin: 0 auto;
+  font-size: .4rem;
 }
 
-.tags{
-  margin: 0 auto;
-}
 .tags li {
-    background-color: $darkblue;
-    color: white;
-    padding: 0 0.75rem;
-    margin: 10px 5px 0 0;
+    background-color:white;
+
+    padding: 0 0.7rem;
+    margin: 6px 3px 0 0;
     display: inline-block;
+    border: 1px solid $darkblue;
     border-radius: 2px;
     font-size: 0.7rem;
-    list-style-type: none;
+    // list-style-type: none;
     line-height: 1.5rem;
 }
 
