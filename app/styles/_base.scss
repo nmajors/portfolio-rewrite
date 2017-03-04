@@ -62,7 +62,7 @@ table {
 
 body{
   // position: relative;
-	min-width: 300px;
+	min-width: 335px;
   margin: 0 auto;
   font-family: Open Sans;
 	 padding-bottom: 30px;
@@ -80,7 +80,7 @@ a{
 section{
   font-size: 1rem;
   // letter-spacing: .1rem;
-  background-color: $lightgray;
+
 	// -webkit-box-shadow: 0 2px 4px rgba(166, 160, 146, 0.7);
 	// -moz-box-shadow: 0 2px 4px rgba(166, 160, 146, 0.7);
 	// box-shadow: 0 2px 4px rgba(166, 160, 146, 0.7);
@@ -92,6 +92,7 @@ section{
   padding: 30px 7%;
 
   @media screen and(min-width: 500px){
+	background-color: $lightgray;
 		// -webkit-box-shadow: none;
 		// -moz-box-shadow: none;
 		// box-shadow: none;

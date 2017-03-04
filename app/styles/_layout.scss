@@ -41,13 +41,13 @@
 
 
 .darkblue-button {
-    width: 180px;
+    // width: 180px;
     background-color: $darkblue;
     padding: 15px 10px;
     font-family: Open Sans;
     letter-spacing: 0.06rem;
-    font-weight: 400 !important;
-    font-size: 14px;
+    // font-weight: 400 !important;
+    font-size: 13px;
     // font-weight: 100;
     color: #fff;
     border: 1px solid rgba(8, 38, 37,0.3);
@@ -60,28 +60,41 @@
     }
 }
 .accent-button{
-  background-color: $accent;
+  background-color: $darkblue;
   font-weight: 400 !important;
   text-align: center;
   font-size: 15px;
   color: #fff;
   display: inline-block;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border: 1px solid $darkblue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid black;
   border-radius: 2px;
   width: 110px;
   text-shadow: 0 1px 1px $darkblue;
+  @include box-shadow;
   &:hover{
     background-color: #9C181D;
+  }
+  @media screen and(min-width: 500px){
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 .accent-button a, .accent-button a:visited {
   color: #fff;
   text-decoration: none;
 }
+div.accent-button:first-of-type{
+  margin-bottom: 15px;
+  @media screen and(min-width: 500px){
+    margin-bottom: auto;
+  }
+}
 div.accent-button:last-of-type{
+  @media screen and(min-width: 500px){
   margin-left: 5%;
+}
 }
 
 .button-link {

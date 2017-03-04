@@ -3,7 +3,9 @@
   background-color: white;
   margin-top: 0;
   padding: 15px;
+  border-bottom: 1px solid $darkblue;
   @media screen and(min-width: 500px) {
+    // border-bottom: none;
   position: inherit;
     margin-top: 15px;
     padding: 30px 7%;
@@ -98,7 +100,10 @@
     // margin: 30px auto 15px auto;
     text-align: center;
     // padding-bottom: 7px;
+    margin: auto;
+    // min-width: 335px;
     @media screen and(min-width: 500px) {
+      min-width:inherit;
       float: none;
       position: inherit;
       width: 90%;
