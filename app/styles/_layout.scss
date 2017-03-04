@@ -18,9 +18,13 @@
 }
 
 .container {
-    width: 90%;
     margin: 0 auto;
     height: 100%;
+    overflow: hidden;
+    @media screen and(min-width: 500px) {
+      width: 90%;
+      overflow: auto;
+    }
     @media screen and(min-width: 1500px){
       width: 1350px;
     }
@@ -82,4 +86,10 @@ div.accent-button:last-of-type{
 
 .button-link {
     text-decoration: none;
+}
+
+.shadow-wrapper{
+  -webkit-box-shadow: 0 -2px 4px rgba(166, 160, 146, 0.2);
+  -moz-box-shadow: 0 -2px 4px rgba(166, 160, 146, 0.2);
+  box-shadow: 0 -2px 4px rgba(166, 160, 146, 0.2);
 }

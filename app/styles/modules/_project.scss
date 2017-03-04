@@ -1,6 +1,16 @@
 // .project--screenshot {
 //   width: 30%;
 // }
+// section.project:nth-of-type(odd){
+// 	background-color: $lightgray;
+//   @media screen and(min-width: 500px){
+//     background-color:inherit;
+//   }
+// }
+// section.project:nth-of-type(even){
+// 	background-color: $lightgray;
+// }
+
 .entry--img {
   width: 200px;
   height: 200px;

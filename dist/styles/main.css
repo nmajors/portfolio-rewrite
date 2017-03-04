@@ -23,9 +23,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
-body {
-  line-height: 1; }
-
 ol, ul {
   list-style: none; }
 
@@ -42,10 +39,13 @@ table {
   border-spacing: 0; }
 
 body {
+  min-width: 300px;
   margin: 0 auto;
   font-family: Open Sans;
-  background-color: #A6A092;
   padding-bottom: 30px; }
+  @media screen and (min-width: 500px) {
+    body {
+      background-color: #A6A092; } }
 
 ul {
   padding-left: 0; }
@@ -56,15 +56,15 @@ a {
 section {
   font-size: 1rem;
   background-color: #F0F1F3;
-  border: 1px solid #03263A;
-  margin-top: 15px;
   color: #230903;
-  line-height: 1.5;
+  line-height: 1.4;
   font-weight: 500;
   padding: 30px 7%; }
   @media screen and (min-width: 500px) {
     section {
-      padding: 30px; } }
+      margin-top: 15px;
+      padding: 30px;
+      border: 1px solid #03263A; } }
   @media screen and (min-width: 768px) {
     section {
       margin-top: 30px; } }
@@ -87,9 +87,13 @@ main {
   /* ie 6/7 */ }
 
 .container {
-  width: 90%;
   margin: 0 auto;
-  height: 100%; }
+  height: 100%;
+  overflow: hidden; }
+  @media screen and (min-width: 500px) {
+    .container {
+      width: 90%;
+      overflow: auto; } }
   @media screen and (min-width: 1500px) {
     .container {
       width: 1350px; } }
@@ -144,6 +148,11 @@ div.accent-button:last-of-type {
 
 .button-link {
   text-decoration: none; }
+
+.shadow-wrapper {
+  -webkit-box-shadow: 0 -2px 4px rgba(166, 160, 146, 0.2);
+  -moz-box-shadow: 0 -2px 4px rgba(166, 160, 146, 0.2);
+  box-shadow: 0 -2px 4px rgba(166, 160, 146, 0.2); }
 
 header {
   line-height: 1.2;
@@ -219,6 +228,17 @@ header {
       .header-icons--icon a:hover {
         color: #27536F; }
 
+.intro {
+  position: relative;
+  background-color: white;
+  margin-top: 0;
+  padding: 15px; }
+  @media screen and (min-width: 500px) {
+    .intro {
+      position: inherit;
+      margin-top: 15px;
+      padding: 30px 7%; } }
+
 .about {
   text-align: left;
   font-size: 15px; }
@@ -232,9 +252,10 @@ header {
       padding: 15px; } }
 
 .about--photo .nancyPhoto {
-  width: 80%;
+  width: 50%;
   height: 50vw;
-  margin: 0 auto 30px auto;
+  float: right;
+  margin: 0 0 15px 15px;
   background-image: url("../assets/images/nancy.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -242,6 +263,7 @@ header {
   border: 1px solid #03263A; }
   @media screen and (min-width: 500px) {
     .about--photo .nancyPhoto {
+      float: none;
       margin: 0 auto 30px auto;
       width: 40%;
       height: 30vw;
@@ -287,11 +309,12 @@ header {
     padding-bottom: 30px; } }
 
 .profile-buttons {
-  width: 90%;
-  margin: 30px auto 0 auto;
   text-align: center; }
   @media screen and (min-width: 500px) {
     .profile-buttons {
+      float: none;
+      position: inherit;
+      width: 90%;
       margin: auto;
       padding-top: 30px; } }
   @media screen and (min-width: 768px) {
@@ -301,14 +324,19 @@ header {
       padding-top: 0;
       text-align: center;
       clear: both; } }
+  @media screen and (min-width: 990px) {
+    .profile-buttons {
+      padding-top: 15px; } }
 
 .profile-buttons .button-link .darkblue-button {
-  padding: 10px;
-  width: 40%;
+  padding: 10px 5px;
+  margin-bottom: 7px;
+  min-width: 150px;
   display: inline-block;
   text-align: center; }
   @media screen and (min-width: 500px) {
     .profile-buttons .button-link .darkblue-button {
+      display: inline-block;
       width: 40%;
       padding: 10px 7px; } }
   @media screen and (min-width: 768px) {
@@ -325,22 +353,21 @@ header {
       .profile-buttons .button-link .darkblue-button .fa-file-pdf-o {
         display: inline; } }
 
-.view {
-  margin-bottom: 15px; }
-  @media screen and (min-width: 500px) {
-    .view {
-      float: left;
-      margin-bottom: auto; } }
-  @media screen and (min-width: 768px) {
-    .view {
-      float: none; } }
+@media screen and (min-width: 500px) {
+  .view {
+    float: left;
+    margin-bottom: auto;
+    margin-right: inherit; } }
 
-.download {
-  margin-left: 10%; }
-  @media screen and (min-width: 500px) {
-    .download {
-      margin: auto;
-      float: right; } }
+@media screen and (min-width: 768px) {
+  .view {
+    float: none; } }
+
+@media screen and (min-width: 500px) {
+  .download {
+    margin-left: 10%;
+    margin: auto;
+    float: right; } }
 
 .entry--img {
   width: 200px;
