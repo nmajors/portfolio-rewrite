@@ -23,9 +23,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
-body {
-  line-height: 1; }
-
 ol, ul {
   list-style: none; }
 
@@ -42,10 +39,13 @@ table {
   border-spacing: 0; }
 
 body {
+  min-width: 300px;
   margin: 0 auto;
   font-family: Open Sans;
-  background-color: #A6A092;
   padding-bottom: 30px; }
+  @media screen and (min-width: 500px) {
+    body {
+      background-color: #A6A092; } }
 
 ul {
   padding-left: 0; }
@@ -55,17 +55,16 @@ a {
 
 section {
   font-size: 1rem;
-  letter-spacing: .1rem;
   background-color: #F0F1F3;
-  border: 1px solid #03263A;
-  margin-top: 15px;
   color: #230903;
-  line-height: 1.5;
+  line-height: 1.4;
   font-weight: 500;
   padding: 30px 7%; }
   @media screen and (min-width: 500px) {
     section {
-      padding: 30px; } }
+      margin-top: 15px;
+      padding: 30px;
+      border: 1px solid #03263A; } }
   @media screen and (min-width: 768px) {
     section {
       margin-top: 30px; } }
@@ -88,9 +87,13 @@ main {
   /* ie 6/7 */ }
 
 .container {
-  width: 90%;
   margin: 0 auto;
-  height: 100%; }
+  height: 100%;
+  overflow: hidden; }
+  @media screen and (min-width: 500px) {
+    .container {
+      width: 90%;
+      overflow: auto; } }
   @media screen and (min-width: 1500px) {
     .container {
       width: 1350px; } }
@@ -120,8 +123,36 @@ main {
     background-color: #27536F;
     color: #230903; }
 
+.accent-button {
+  background-color: #5c0e11;
+  font-weight: 400 !important;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  display: inline-block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid #03263A;
+  border-radius: 2px;
+  width: 110px;
+  text-shadow: 0 1px 1px #03263A; }
+  .accent-button:hover {
+    background-color: #9C181D; }
+
+.accent-button a, .accent-button a:visited {
+  color: #fff;
+  text-decoration: none; }
+
+div.accent-button:last-of-type {
+  margin-left: 5%; }
+
 .button-link {
   text-decoration: none; }
+
+.shadow-wrapper {
+  -webkit-box-shadow: 0 -2px 4px rgba(166, 160, 146, 0.2);
+  -moz-box-shadow: 0 -2px 4px rgba(166, 160, 146, 0.2);
+  box-shadow: 0 -2px 4px rgba(166, 160, 146, 0.2); }
 
 header {
   line-height: 1.2;
@@ -197,9 +228,20 @@ header {
       .header-icons--icon a:hover {
         color: #27536F; }
 
+.intro {
+  position: relative;
+  background-color: white;
+  margin-top: 0;
+  padding: 15px; }
+  @media screen and (min-width: 500px) {
+    .intro {
+      position: inherit;
+      margin-top: 15px;
+      padding: 30px 7%; } }
+
 .about {
-  text-align: center;
-  font-size: 14px; }
+  text-align: left;
+  font-size: 15px; }
   @media screen and (min-width: 500px) {
     .about {
       text-align: left; } }
@@ -210,9 +252,10 @@ header {
       padding: 15px; } }
 
 .about--photo .nancyPhoto {
-  width: 80%;
+  width: 50%;
   height: 50vw;
-  margin: 0 auto 30px auto;
+  float: right;
+  margin: 0 0 15px 15px;
   background-image: url("../assets/images/nancy.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -220,6 +263,8 @@ header {
   border: 1px solid #03263A; }
   @media screen and (min-width: 500px) {
     .about--photo .nancyPhoto {
+      float: none;
+      margin: 0 auto 30px auto;
       width: 40%;
       height: 30vw;
       min-width: 210px; } }
@@ -264,10 +309,13 @@ header {
     padding-bottom: 30px; } }
 
 .profile-buttons {
-  width: 90%;
-  margin: auto; }
+  text-align: center; }
   @media screen and (min-width: 500px) {
     .profile-buttons {
+      float: none;
+      position: inherit;
+      width: 90%;
+      margin: auto;
       padding-top: 30px; } }
   @media screen and (min-width: 768px) {
     .profile-buttons {
@@ -276,25 +324,40 @@ header {
       padding-top: 0;
       text-align: center;
       clear: both; } }
+  @media screen and (min-width: 990px) {
+    .profile-buttons {
+      padding-top: 15px; } }
 
-@media screen and (min-width: 500px) {
-  .profile-buttons .button-link .darkblue-button {
-    width: 40%;
-    padding: 10px 7px; } }
-
-@media screen and (min-width: 768px) {
-  .profile-buttons .button-link .darkblue-button {
-    width: 45%;
-    font-size: 12px;
-    padding: 15px 10px; } }
-
-@media screen and (min-width: 990px) {
-  .profile-buttons .button-link .darkblue-button {
-    font-size: 14px; } }
+.profile-buttons .button-link .darkblue-button {
+  padding: 10px 5px;
+  margin-bottom: 7px;
+  min-width: 150px;
+  display: inline-block;
+  text-align: center; }
+  @media screen and (min-width: 500px) {
+    .profile-buttons .button-link .darkblue-button {
+      display: inline-block;
+      width: 40%;
+      padding: 10px 7px; } }
+  @media screen and (min-width: 768px) {
+    .profile-buttons .button-link .darkblue-button {
+      width: 45%;
+      font-size: 12px;
+      padding: 15px 10px; } }
+  @media screen and (min-width: 990px) {
+    .profile-buttons .button-link .darkblue-button {
+      font-size: 14px; } }
+  .profile-buttons .button-link .darkblue-button .fa-file-pdf-o {
+    display: none; }
+    @media screen and (min-width: 500px) {
+      .profile-buttons .button-link .darkblue-button .fa-file-pdf-o {
+        display: inline; } }
 
 @media screen and (min-width: 500px) {
   .view {
-    float: left; } }
+    float: left;
+    margin-bottom: auto;
+    margin-right: inherit; } }
 
 @media screen and (min-width: 768px) {
   .view {
@@ -302,19 +365,18 @@ header {
 
 @media screen and (min-width: 500px) {
   .download {
+    margin-left: 10%;
+    margin: auto;
     float: right; } }
 
-.project--screenshot {
-  width: 30%; }
-
 .entry--img {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   border: 1px solid #03263A;
   transition: all 0.4s ease-in-out;
-  transition: border-radius 0.6s ease-in-out;
-  margin: 0 auto;
+  transition: border-radius 0.4s ease-in-out;
+  margin: 0 auto 30px auto;
   background-image: url("../assets/images/weather-watcher.png");
   background-size: cover;
   box-shadow: inset 0 0 0 160px rgba(92, 14, 17, 0.8), inset 0 0 0 16px rgba(255, 255, 255, 0.3); }
@@ -337,10 +399,12 @@ header {
   margin-bottom: 0; }
 
 .entry--content {
+  font-size: 15px;
   position: relative;
   background: white;
-  padding: 2rem;
-  border: 1px solid #03263A; }
+  padding: 1rem;
+  border: 1px solid #03263A;
+  margin-bottom: 15px; }
 
 .entry--content strong {
   color: #3498DB; }
@@ -391,7 +455,8 @@ header {
     letter-spacing: 2px;
     text-shadow: 0 1px 2px rgba(8, 28, 37, 0.9);
     margin: 0 15px;
-    padding: 65px 0 0; }
+    padding: 65px 0 0;
+    font-size: 24px !important; }
     @media screen and (min-width: 600px) {
       .entry--name h1 {
         font-size: 22px;
@@ -399,7 +464,6 @@ header {
         padding: 130px 0 0; } }
 
 .entry--name:hover > h1 {
-  padding: 190px 0 0;
   transform: scale(0);
   opacity: 1; }
 
@@ -407,6 +471,12 @@ header {
   content: "";
   display: table;
   clear: both; }
+
+.entry-buttons {
+  text-align: center; }
+
+.tags {
+  margin: 0 auto; }
 
 .tags li {
   background-color: #03263A;

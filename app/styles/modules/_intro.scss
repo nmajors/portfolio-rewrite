@@ -1,6 +1,18 @@
+.intro{
+  position: relative;
+  background-color: white;
+  margin-top: 0;
+  padding: 15px;
+  @media screen and(min-width: 500px) {
+  position: inherit;
+    margin-top: 15px;
+    padding: 30px 7%;
+  }
+}
 .about {
-    text-align: center;
-    font-size: 14px;
+    // margin-top: 15px;
+    text-align: left;
+    font-size: 15px;
     @media screen and(min-width: 500px) {
         text-align: left;
     }
@@ -12,15 +24,18 @@
 }
 .about--photo{
   .nancyPhoto {
-      width: 80%;
+      width: 50%;
       height: 50vw;
-      margin: 0 auto 30px auto;
+      float: right;
+      margin: 0 0 15px 15px;
       background-image: url("../assets/images/nancy.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
       border: 1px solid $darkblue;
       @media screen and(min-width: 500px) {
+        float: none;
+        margin: 0 auto 30px auto;
           // text-align: center;
           width: 40%;
           height: 30vw;
@@ -40,6 +55,7 @@
   }
 }
 .about--content {
+
     @media screen and(min-width: 768px) {
         width: calc(70% - 30px);
     }
@@ -73,9 +89,20 @@
 }
 
 .profile-buttons {
-    width: 90%;
-    margin: auto;
+    // width: 40%;
+    // float: right;
+    // position: absolute;
+    // top: 0;
+    // right: -15px;
+    // margin: 30px 30px 0 auto;
+    // margin: 30px auto 15px auto;
+    text-align: center;
+    // padding-bottom: 7px;
     @media screen and(min-width: 500px) {
+      float: none;
+      position: inherit;
+      width: 90%;
+      margin: auto;
         padding-top: 30px;
     }
     @media screen and(min-width: 768px) {
@@ -85,10 +112,22 @@
         text-align: center;
         clear: both;
     }
+    @media screen and(min-width: 990px) {
+      padding-top: 15px;
+    }
 }
 
 .profile-buttons .button-link .darkblue-button {
+  padding: 10px 5px;
+  margin-bottom: 7px;
+  // font-size: 9px;
+  // padding: 7px;
+// width: 40%;
+min-width: 150px;
+display: inline-block;
+text-align: center;
     @media screen and(min-width: 500px) {
+      display: inline-block;
         width: 40%;
         padding: 10px 7px;
     }
@@ -100,10 +139,19 @@
     @media screen and(min-width: 990px) {
         font-size: 14px;
     }
+.fa-file-pdf-o{
+  display: none;
+  @media screen and(min-width: 500px) {
+    display: inline;
+  }
+}
 }
 .view {
+// float: left;
     @media screen and(min-width: 500px) {
         float: left;
+        margin-bottom:auto;
+        margin-right: inherit;
     }
     @media screen and(min-width: 768px) {
         float: none;
@@ -111,7 +159,11 @@
 }
 
 .download {
+  // float: right;
+
     @media screen and(min-width: 500px) {
+      margin-left: 10%;
+      margin: auto;
         float: right;
     }
 }
