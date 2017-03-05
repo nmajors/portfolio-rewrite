@@ -55,9 +55,10 @@
     @include box-shadow;
     &:active,
     &:hover {
-        background-color: $lightgreen;
-        color: $black;
-    }
+        // background-color: $lightgreen;
+    //     color: $black;
+    background-color: $accent;
+  }
 }
 .accent-button{
   background-color: $darkblue;
@@ -75,6 +76,7 @@
   @include box-shadow;
   &:hover{
     background-color: #9C181D;
+    // background-color: $accent;
   }
   @media screen and(min-width: 500px){
     padding-top: 5px;
@@ -94,6 +96,9 @@ div.accent-button:first-of-type{
 div.accent-button:last-of-type{
   @media screen and(min-width: 500px){
   margin-left: 5%;
+}
+@media screen and(min-width: 768px){
+margin-left:15px;
 }
 }
 
