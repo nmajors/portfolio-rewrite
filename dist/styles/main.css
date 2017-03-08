@@ -248,8 +248,7 @@ header {
   border-bottom: 1px solid #03263A; }
   @media screen and (min-width: 500px) {
     .intro {
-      position: inherit;
-      padding: 30px 7%; } }
+      position: inherit; } }
 
 .about {
   text-align: left;
@@ -259,9 +258,7 @@ header {
       text-align: left; } }
   @media screen and (min-width: 768px) {
     .about {
-      position: relative;
-      font-size: 16px;
-      padding: 15px; } }
+      font-size: 15px; } }
 
 .about--photo .nancyPhoto {
   width: 50%;
@@ -282,11 +279,19 @@ header {
       min-width: 210px; } }
   @media screen and (min-width: 768px) {
     .about--photo .nancyPhoto {
-      width: 30%;
-      height: 20vw;
-      float: right; } }
+      width: 35%;
+      height: 35vw;
+      float: right;
+      max-width: 250px;
+      max-height: 290px;
+      margin-left: 15px;
+      margin-bottom: 0; } }
   @media screen and (min-width: 1100px) {
     .about--photo .nancyPhoto {
+      max-width: none;
+      max-height: none;
+      width: 30%;
+      height: 20vw;
       position: absolute;
       top: 50%;
       right: 15px;
@@ -294,7 +299,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .about--content {
-    width: calc(70% - 30px); } }
+    padding: 15px; } }
 
 .about--content .about--item:first-child {
   margin-top: 0; }
@@ -337,7 +342,8 @@ header {
       display: inline-block;
       padding-top: 0;
       text-align: center;
-      clear: both; } }
+      clear: both;
+      padding-left: 15px; } }
   @media screen and (min-width: 990px) {
     .profile-buttons {
       padding-top: 15px; } }
@@ -357,7 +363,8 @@ header {
     .profile-buttons .button-link .darkblue-button {
       width: 45%;
       font-size: 12px;
-      padding: 15px 10px; } }
+      padding: 15px 10px;
+      max-width: 185px; } }
   @media screen and (min-width: 990px) {
     .profile-buttons .button-link .darkblue-button {
       font-size: 14px; } }
@@ -382,6 +389,11 @@ header {
     margin-left: 10%;
     margin: auto;
     float: right; } }
+
+@media screen and (min-width: 768px) {
+  .download {
+    float: none;
+    margin-left: 15px; } }
 
 section.project:nth-of-type(even) {
   background-color: #F0F1F3; }

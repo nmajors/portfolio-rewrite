@@ -8,7 +8,7 @@
     // border-bottom: none;
   position: inherit;
     // margin-top: 15px;
-    padding: 30px 7%;
+    // padding: 30px 7%;
     // border-top: 1px solid $darkblue;
   }
 }
@@ -20,9 +20,9 @@
         text-align: left;
     }
     @media screen and(min-width: 768px) {
-        position: relative;
-        font-size: 16px;
-        padding: 15px;
+        // position: relative;
+        font-size: 15px;
+        // padding: 15px;
     }
 }
 .about--photo{
@@ -45,11 +45,19 @@
           min-width: 210px;
       }
       @media screen and(min-width: 768px) {
-          width: 30%;
-          height: 20vw;
+          width: 35%;
+          height: 35vw;
           float: right;
+          max-width: 250px;
+          max-height: 290px;
+          margin-left: 15px;
+          margin-bottom: 0;
       }
       @media screen and(min-width: 1100px) {
+        max-width: none;
+        max-height: none;
+        width: 30%;
+        height: 20vw;
           position: absolute;
           top: 50%;
           right: 15px;
@@ -60,7 +68,8 @@
 .about--content {
 
     @media screen and(min-width: 768px) {
-        width: calc(70% - 30px);
+        // width: calc(70% - 30px);
+        padding: 15px;
     }
     .about--item {
         &:first-child {
@@ -117,6 +126,9 @@
         padding-top: 0;
         text-align: center;
         clear: both;
+        padding-left: 15px;
+        // position: absolute;
+        // bottom: 0;
     }
     @media screen and(min-width: 990px) {
       padding-top: 15px;
@@ -141,6 +153,9 @@ text-align: center;
         width: 45%;
         font-size: 12px;
         padding: 15px 10px;
+        max-width: 185px;
+        // position: relative;
+        // bottom: 0;
     }
     @media screen and(min-width: 990px) {
         font-size: 14px;
@@ -160,7 +175,7 @@ text-align: center;
         margin-right: inherit;
     }
     @media screen and(min-width: 768px) {
-        float: none;
+    float: none;
     }
 }
 
@@ -171,5 +186,9 @@ text-align: center;
       margin-left: 10%;
       margin: auto;
         float: right;
+    }
+    @media screen and(min-width: 768px) {
+        float: none;
+        margin-left: 15px;
     }
 }
