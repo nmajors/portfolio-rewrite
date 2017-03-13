@@ -87,7 +87,7 @@ main {
   margin: 0 auto;
   height: 100%;
   overflow: hidden; }
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: 768px) {
     .container {
       width: 90%;
       overflow: auto; } }
@@ -177,15 +177,20 @@ header {
   @media screen and (min-width: 500px) {
     header {
       min-height: 145px;
-      text-align: left; } }
+      text-align: left;
+      padding-left: 15px; } }
   @media screen and (min-width: 768px) {
     header {
       text-align: left;
-      height: 160px; } }
+      height: 160px;
+      padding-left: 0; } }
 
 .header-title {
   margin: 0;
   padding-top: 15px; }
+  @media screen and (min-width: 500px) {
+    .header-title {
+      padding-top: 25px; } }
   @media screen and (min-width: 768px) {
     .header-title {
       padding-top: 25px;
@@ -249,16 +254,13 @@ header {
   @media screen and (min-width: 500px) {
     .intro {
       position: inherit; } }
+  @media screen and (min-width: 768px) {
+    .intro {
+      position: relative; } }
 
 .about {
   text-align: left;
   font-size: 15px; }
-  @media screen and (min-width: 500px) {
-    .about {
-      text-align: left; } }
-  @media screen and (min-width: 768px) {
-    .about {
-      font-size: 15px; } }
 
 .about--photo .nancyPhoto {
   width: 50%;
@@ -272,20 +274,13 @@ header {
   border: 1px solid #03263A; }
   @media screen and (min-width: 500px) {
     .about--photo .nancyPhoto {
-      float: none;
-      margin: 0 auto 30px auto;
-      width: 40%;
-      height: 30vw;
-      min-width: 210px; } }
-  @media screen and (min-width: 768px) {
-    .about--photo .nancyPhoto {
       width: 35%;
       height: 35vw;
       float: right;
+      min-width: 210px;
       max-width: 250px;
       max-height: 290px;
-      margin-left: 15px;
-      margin-bottom: 0; } }
+      margin: 0 auto 0 15px; } }
   @media screen and (min-width: 1100px) {
     .about--photo .nancyPhoto {
       max-width: none;
@@ -297,10 +292,6 @@ header {
       right: 15px;
       transform: translateY(-50%); } }
 
-@media screen and (min-width: 768px) {
-  .about--content {
-    padding: 15px; } }
-
 .about--content .about--item:first-child {
   margin-top: 0; }
 
@@ -310,10 +301,6 @@ header {
 .about--content .surprise, .about--content a.surprise:visited {
   color: #03263A;
   text-decoration: none; }
-
-@media screen and (min-width: 500px) {
-  .about p:last-of-type {
-    margin-bottom: 0; } }
 
 @media screen and (min-width: 768px) {
   .about p:last-of-type {
@@ -330,20 +317,15 @@ header {
   margin: auto; }
   @media screen and (min-width: 500px) {
     .profile-buttons {
-      min-width: inherit;
-      float: none;
-      position: inherit;
-      width: 90%;
-      margin: auto;
-      padding-top: 30px; } }
+      text-align: left; } }
   @media screen and (min-width: 768px) {
     .profile-buttons {
       width: calc(60% - 2px);
       display: inline-block;
-      padding-top: 0;
-      text-align: center;
+      padding-top: 15px;
       clear: both;
-      padding-left: 15px; } }
+      position: absolute;
+      bottom: 8px; } }
   @media screen and (min-width: 990px) {
     .profile-buttons {
       padding-top: 15px; } }
@@ -354,11 +336,6 @@ header {
   min-width: 150px;
   display: inline-block;
   text-align: center; }
-  @media screen and (min-width: 500px) {
-    .profile-buttons .button-link .darkblue-button {
-      display: inline-block;
-      width: 40%;
-      padding: 10px 7px; } }
   @media screen and (min-width: 768px) {
     .profile-buttons .button-link .darkblue-button {
       width: 45%;
@@ -370,25 +347,10 @@ header {
       font-size: 14px; } }
   .profile-buttons .button-link .darkblue-button .fa-file-pdf-o {
     display: none; }
-    @media screen and (min-width: 500px) {
-      .profile-buttons .button-link .darkblue-button .fa-file-pdf-o {
-        display: inline; } }
-
-@media screen and (min-width: 500px) {
-  .view {
-    float: left;
-    margin-bottom: auto;
-    margin-right: inherit; } }
 
 @media screen and (min-width: 768px) {
   .view {
     float: none; } }
-
-@media screen and (min-width: 500px) {
-  .download {
-    margin-left: 10%;
-    margin: auto;
-    float: right; } }
 
 @media screen and (min-width: 768px) {
   .download {
