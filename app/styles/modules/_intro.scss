@@ -12,14 +12,20 @@
     // border-top: 1px solid $darkblue;
   }
   @media screen and(min-width: 768px) {
-    position: relative;
+    // position: static;
   }
+    @media screen and(min-width: 1100px) {
+      padding: 30px;
+    }
 }
-.about {
-    // margin-top: 15px;
-    text-align: left;
-    font-size: 15px;
-}
+// .about {
+//     // margin-top: 15px;
+//     text-align: left;
+//     font-size: 15px;
+//     @media screen and(min-width: 768px) {
+//       position: relative;
+//     }
+// }
 .about--photo{
   .nancyPhoto {
       width: 50%;
@@ -40,35 +46,25 @@
           max-height: 290px;
           margin: 0 auto 0 15px;
       }
-      @media screen and(min-width: 500px) {
-        // margin: 30px 30px 15px 15px;
-        // margin: 15px;
-      }
       @media screen and(min-width: 1100px) {
-        max-width: none;
-        max-height: none;
-        width: 30%;
-        height: 20vw;
-          position: absolute;
-          top: 50%;
-          right: 15px;
-          transform: translateY(-50%);
+        margin-left: 30px;
       }
   }
 }
 .about--content {
-
     @media screen and(min-width: 768px) {
-        // width: calc(70% - 30px);
-        // padding: 15px;
+        // position: relative;
     }
     .about--item {
+
         &:first-child {
             margin-top: 0;
         }
-
         &:last-child {
             padding-bottom: 0;
+        }
+        @media screen and(min-width: 768px) {
+          // margin-bottom: 30px;
         }
     }
     .surprise, a.surprise:visited {
@@ -78,9 +74,6 @@
 }
 
 .about p:last-of-type {
-    // @media screen and(min-width: 500px) {
-    //     margin-bottom: 0;
-    // }
     @media screen and(min-width: 768px) {
         padding-bottom: 0;
         display: inline;
@@ -92,95 +85,59 @@
 }
 
 .profile-buttons {
-    // width: 40%;
-    // float: right;
-    // position: absolute;
-    // top: 0;
-    // right: -15px;
-    // margin: 30px 30px 0 auto;
-    // margin: 30px auto 15px auto;
     text-align: center;
-    // padding-bottom: 7px;
     margin: auto;
-    // min-width: 335px;
     @media screen and(min-width: 500px) {
-    //   min-width:inherit;
-    //   float: none;
-    //   position: inherit;
-    //   width: 90%;
-    //   margin: auto;
-    //     padding-top: 30px;
     text-align: left;
     }
     @media screen and(min-width: 768px) {
         width: calc(60% - 2px);
         display: inline-block;
         padding-top: 15px;
-        // text-align: center;
-        clear: both;
-        // padding-left: 15px;
-        position: absolute;
-        bottom: 8px;
+        // clear: both;
+        // position: absolute;
+        // transform: translateY(calc(-100% + 7px));
+
     }
     @media screen and(min-width: 990px) {
       padding-top: 15px;
     }
+        @media screen and(min-width: 1100px) {
+          padding-bottom: 14px;
+        }
 }
 
 .profile-buttons .button-link .darkblue-button {
   padding: 10px 5px;
   margin-bottom: 7px;
-  // font-size: 9px;
-  // padding: 7px;
-// width: 40%;
 min-width: 150px;
 display: inline-block;
 text-align: center;
-    // @media screen and(min-width: 500px) {
-    //   display: inline-block;
-    //     width: 40%;
-    //     padding: 10px 7px;
-    // }
     @media screen and(min-width: 768px) {
         width: 45%;
         font-size: 12px;
         padding: 15px 10px;
         max-width: 185px;
-        // position: relative;
-        // bottom: 0;
     }
     @media screen and(min-width: 990px) {
         font-size: 14px;
     }
 .fa-file-pdf-o{
   display: none;
-  // @media screen and(min-width: 500px) {
-  //   display: inline;
-  // }
 }
 }
 .view {
-// float: left;
-    // @media screen and(min-width: 500px) {
-    //     float: left;
-    //     margin-bottom:auto;
-    //     margin-right: inherit;
-    // }
     @media screen and(min-width: 768px) {
     float: none;
     }
 }
 
 .download {
-  // float: right;
-
-    // @media screen and(min-width: 500px) {
-    //   margin-left: 10%;
-    //   margin: auto;
-    //     float: right;
-    // }
     @media screen and(min-width: 768px) {
         float: none;
         margin-left: 15px;
+    }
+    @media screen and(min-width: 1100px){
+      margin-left: 30px;
     }
 }

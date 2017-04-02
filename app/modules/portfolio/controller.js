@@ -57,6 +57,7 @@ class PortfolioController {
 
       hoverSurprise(){
         Array.from(this.hoverEls).forEach((hoverEl)=>{
+          console.log(this.hoverEls);
           let pic = document.querySelector(".nancyPhoto");
           hoverEl.addEventListener("mouseenter", (ev) =>{
             console.log("hi");

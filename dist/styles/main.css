@@ -62,9 +62,14 @@ section {
   @media screen and (min-width: 500px) {
     section {
       background-color: #F0F1F3;
+      line-height: 1.6;
       padding: 30px;
       border-left: 1px solid #03263A;
       border-right: 1px solid #03263A; } }
+  @media screen and (min-width: 768px) {
+    section {
+      letter-spacing: .9px;
+      line-height: 1.7; } }
 
 main {
   border-top: 1px solid #03263A; }
@@ -254,13 +259,9 @@ header {
   @media screen and (min-width: 500px) {
     .intro {
       position: inherit; } }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1100px) {
     .intro {
-      position: relative; } }
-
-.about {
-  text-align: left;
-  font-size: 15px; }
+      padding: 30px; } }
 
 .about--photo .nancyPhoto {
   width: 50%;
@@ -283,14 +284,7 @@ header {
       margin: 0 auto 0 15px; } }
   @media screen and (min-width: 1100px) {
     .about--photo .nancyPhoto {
-      max-width: none;
-      max-height: none;
-      width: 30%;
-      height: 20vw;
-      position: absolute;
-      top: 50%;
-      right: 15px;
-      transform: translateY(-50%); } }
+      margin-left: 30px; } }
 
 .about--content .about--item:first-child {
   margin-top: 0; }
@@ -322,13 +316,13 @@ header {
     .profile-buttons {
       width: calc(60% - 2px);
       display: inline-block;
-      padding-top: 15px;
-      clear: both;
-      position: absolute;
-      bottom: 8px; } }
+      padding-top: 15px; } }
   @media screen and (min-width: 990px) {
     .profile-buttons {
       padding-top: 15px; } }
+  @media screen and (min-width: 1100px) {
+    .profile-buttons {
+      padding-bottom: 14px; } }
 
 .profile-buttons .button-link .darkblue-button {
   padding: 10px 5px;
@@ -356,6 +350,10 @@ header {
   .download {
     float: none;
     margin-left: 15px; } }
+
+@media screen and (min-width: 1100px) {
+  .download {
+    margin-left: 30px; } }
 
 section.project:nth-of-type(even) {
   background-color: #F0F1F3; }
@@ -398,6 +396,9 @@ section.project:nth-of-type(odd) {
     .entry {
       border: none;
       margin: 2rem 0; } }
+  @media screen and (min-width: 1100px) {
+    .entry {
+      padding: 15px; } }
 
 .entry:first-child {
   margin-top: 0; }
@@ -412,6 +413,12 @@ section.project:nth-of-type(odd) {
     .entry--content {
       position: relative;
       padding: 1rem; } }
+  @media screen and (min-width: 768px) {
+    .entry--content {
+      font-size: 16px; } }
+  @media screen and (min-width: 1100px) {
+    .entry--content {
+      padding: 15px 15px 15px 30px; } }
 
 .entry--content strong {
   color: #3498DB; }
