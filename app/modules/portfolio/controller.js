@@ -2,6 +2,7 @@ class PortfolioController {
     constructor() {
         this.events = document.querySelectorAll(".entry");
         this.triggerOffset = 0.9;
+
         this.hoverEls = document.querySelectorAll(".surprise");
 
         this.eventListeners();
@@ -12,7 +13,6 @@ class PortfolioController {
 
       offset(el) {
         let rect = el.getBoundingClientRect(), bodyEl = document.body;
-
         return {
           top: rect.top + bodyEl.scrollTop,
           left: rect.left + bodyEl.scrollLeft
@@ -20,7 +20,6 @@ class PortfolioController {
       }
 
       eventListeners() {
-
         window.addEventListener("scroll", (e) => {
           if (!window.requestAnimationFrame) {
             setTimeout(() => {
@@ -33,7 +32,6 @@ class PortfolioController {
             });
           }
         });
-
       }
 
     	showBlocks(blocks, offset) {
@@ -49,16 +47,16 @@ class PortfolioController {
               content.classList.remove("is-hidden");
               content.classList.add("bounce-in");
             }
-
           }
         });
-
     	}
 
+
       hoverSurprise(){
+        let pic = document.querySelector(".nancyPhoto");
+        console.log(this.hoverEls);
         Array.from(this.hoverEls).forEach((hoverEl)=>{
-          console.log(this.hoverEls);
-          let pic = document.querySelector(".nancyPhoto");
+          console.log(hoverEl);
           hoverEl.addEventListener("mouseenter", (ev) =>{
             console.log("hi");
             document.body.style.cursor = "pointer";

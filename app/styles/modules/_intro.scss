@@ -14,18 +14,24 @@
   @media screen and(min-width: 768px) {
     // position: static;
   }
-    @media screen and(min-width: 1100px) {
-      padding: 30px;
-    }
+    // @media screen and(min-width: 1100px) {
+    //   // padding: 15px 30px;
+    // }
 }
-// .about {
+.about {
+  @media screen and(min-width: 1100px) {
+    padding: 15px 60px 0 60px;
+    max-width: 1100px;
+//     max-width: 900px;
+//     margin: 0 auto;
+  }
 //     // margin-top: 15px;
 //     text-align: left;
 //     font-size: 15px;
 //     @media screen and(min-width: 768px) {
 //       position: relative;
 //     }
-// }
+}
 .about--photo{
   .nancyPhoto {
       width: 50%;
