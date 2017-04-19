@@ -14,14 +14,17 @@
   @media screen and(min-width: 768px) {
     // position: static;
   }
-    // @media screen and(min-width: 1100px) {
-    //   // padding: 15px 30px;
-    // }
+    @media screen and(min-width: 1100px) {
+      padding: 45px 15px;
+
+    }
 }
 .about {
   @media screen and(min-width: 1100px) {
     padding: 15px 60px 0 60px;
     max-width: 1100px;
+    margin: 0 auto;
+
 //     max-width: 900px;
 //     margin: 0 auto;
   }
@@ -53,7 +56,7 @@
           margin: 0 auto 0 15px;
       }
       @media screen and(min-width: 1100px) {
-        margin-left: 30px;
+        margin-left: 60px;
       }
   }
 }
@@ -110,6 +113,7 @@
     }
         @media screen and(min-width: 1100px) {
           padding-bottom: 14px;
+          padding-top: 30px;
         }
 }
 
@@ -144,6 +148,6 @@ text-align: center;
         margin-left: 15px;
     }
     @media screen and(min-width: 1100px){
-      margin-left: 30px;
+      margin-left: 45px;
     }
 }

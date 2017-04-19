@@ -163,6 +163,10 @@ div.accent-button:first-of-type {
   div.accent-button:last-of-type {
     margin-left: 15px; } }
 
+@media screen and (min-width: 1100px) {
+  div.accent-button:last-of-type {
+    margin-left: 30px; } }
+
 .button-link {
   text-decoration: none; }
 
@@ -189,6 +193,9 @@ header {
       text-align: left;
       height: 160px;
       padding-left: 0; } }
+  @media screen and (min-width: 1100px) {
+    header {
+      height: 172px; } }
 
 .header-title {
   margin: 0;
@@ -200,6 +207,10 @@ header {
     .header-title {
       padding-top: 25px;
       display: inline-block; } }
+  @media screen and (min-width: 1100px) {
+    .header-title {
+      line-height: 1.3;
+      padding-top: 30px; } }
   .header-title--item {
     font-size: 18px; }
     @media screen and (min-width: 500px) {
@@ -259,11 +270,15 @@ header {
   @media screen and (min-width: 500px) {
     .intro {
       position: inherit; } }
+  @media screen and (min-width: 1100px) {
+    .intro {
+      padding: 45px 15px; } }
 
 @media screen and (min-width: 1100px) {
   .about {
     padding: 15px 60px 0 60px;
-    max-width: 1100px; } }
+    max-width: 1100px;
+    margin: 0 auto; } }
 
 .about--photo .nancyPhoto {
   width: 50%;
@@ -286,7 +301,7 @@ header {
       margin: 0 auto 0 15px; } }
   @media screen and (min-width: 1100px) {
     .about--photo .nancyPhoto {
-      margin-left: 30px; } }
+      margin-left: 60px; } }
 
 .about--content .about--item:first-child {
   margin-top: 0; }
@@ -324,7 +339,8 @@ header {
       padding-top: 15px; } }
   @media screen and (min-width: 1100px) {
     .profile-buttons {
-      padding-bottom: 14px; } }
+      padding-bottom: 14px;
+      padding-top: 30px; } }
 
 .profile-buttons .button-link .darkblue-button {
   padding: 10px 5px;
@@ -355,7 +371,7 @@ header {
 
 @media screen and (min-width: 1100px) {
   .download {
-    margin-left: 30px; } }
+    margin-left: 45px; } }
 
 section.project:nth-of-type(even) {
   background-color: #F0F1F3; }
@@ -366,6 +382,10 @@ section.project:nth-of-type(odd) {
 .project {
   padding: 0;
   border-bottom: 1px solid #03263A; }
+
+@media screen and (min-width: 1100px) {
+  .entry {
+    margin: 0 auto; } }
 
 .entry--img {
   position: relative;
@@ -508,6 +528,10 @@ section.project:nth-of-type(odd) {
   @media screen and (min-width: 768px) {
     .entry-buttons {
       text-align: left; } }
+  @media screen and (min-width: 1100px) {
+    .entry-buttons {
+      margin-top: 30px;
+      margin-bottom: 30px; } }
 
 .tools {
   font-weight: 300;
