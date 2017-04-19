@@ -36,7 +36,7 @@ class PortfolioController {
         let pic = document.querySelector(".nancyPhoto");
         if (evn.target.classList.contains("surprise")){
          document.body.style.cursor = "pointer";
-         pic.style.backgroundImage = "url('https://blobtoblog.files.wordpress.com/2011/05/zoolander-slashie-award.jpg')";
+         pic.style.backgroundImage = "url('./assets/images/zoolander-slashie-award.jpg')";
          pic.style.backgroundSize = "auto";
          pic.style.border = "1px solid #fff";
         }
